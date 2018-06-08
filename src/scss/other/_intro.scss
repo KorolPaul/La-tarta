@@ -1,0 +1,19 @@
+.intro {
+
+    h1 {
+        color: $bright_color;
+        font-size: 15vmin;
+        letter-spacing: .25em;
+        margin-bottom: 0;
+        @include tablet {
+            font-size: 120px;
+            margin: 50px 0 15px;
+        }
+    }
+    h3 {
+        margin: 10px 0 15px;
+    }
+    h4 {
+        margin: 0 0 45px;
+    }
+}

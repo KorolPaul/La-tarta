@@ -1,0 +1,67 @@
+.menu-toggle {
+    @include invisible-text;
+    box-sizing: border-box;
+    border-radius: 0;
+    background: #fff;
+    padding: 0;
+    height: 26px;
+    width: 40px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    overflow: visible;
+    min-width: inherit;
+    z-index: 2;
+    @include media(480px) {
+        left: 35px;
+    }
+    @include tablet {
+        left: 50%;
+        margin: 0 0 0 (-$max-width__article/2 + 20px);
+    }
+    @include tablet-wide {
+        display: none;
+    }
+
+    .home & {
+        top: 35px;
+    }
+
+    &:before {
+        content: '';
+        background: $bg_color;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        right: 0;
+        height: 7px;
+        transition: .2s ease-in-out height,
+                    .2s ease-in-out transform;
+    }
+    &:after {
+        content: '';
+        background: $bg_color;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        right: 0;
+        height: 7px;
+        transition: .2s ease-in-out height,
+                    .2s ease-in-out transform;
+    }
+
+    .toggled & {
+        left: 35px;
+        margin: 0 0 0 -20px;
+
+        &:before {
+            transform: rotateZ(45deg) translate(5px, 5px);
+            height: 4px;
+        }
+        &:after {
+            transform: rotateZ(-45deg) translate(5px, -4px);
+            height: 4px;
+        }
+    }
+}

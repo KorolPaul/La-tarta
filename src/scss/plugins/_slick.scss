@@ -1,0 +1,135 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: visible !important;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-prev,
+.slick-next {
+    @include invisible-text;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center center;
+    background-size: 14px 50px;
+    height: 90px;
+    width: 42px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    min-width: inherit;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: .2s ease-in-out background-color, .2s ease-in-out opacity;
+    @include tablet {
+        background-size: 28px 100px;
+        height: 180px;
+        width: 85px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+}
+
+.slick-prev {
+    background-image: url(#{$img-path}/slider-prev.svg);
+    left: -5px;
+    @include tablet {
+        left: 0;
+    }
+}
+.slick-next {
+    background-image: url(#{$img-path}/slider-next.svg);
+    right: -5px;
+    @include tablet {
+        right: 0;
+    }
+}
+.slick-disabled {
+    opacity: .2;
+}

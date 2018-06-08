@@ -1,0 +1,77 @@
+%heading-1 {
+    font: bold 46px $font-family__heading;
+    margin: 60px 0 25px;
+    @include tablet {
+        margin-top: 85px;
+        font-size: 60px;
+    }
+}
+%heading-2 {
+    font: 600 36px $font-family__heading;
+    margin: $layout_indent * 2 0 20px;
+    @include tablet {
+        margin-top: 80px;
+    }
+}
+%heading-3 {
+    font: bold 20px $font-family__heading;
+    margin: ($layout_indent * 1.5) 0 $layout_indent;
+    @include tablet {
+        font-size: 28px;
+    }
+}
+%heading-4 {
+    font: 20px $font-family__heading;
+    margin: 35px 0 $layout_indent;
+}
+%heading-5 {
+    font: bold 16px $font-family__heading;
+    margin: 30px 0 $layout_indent;
+}
+%heading-6 {
+    font: bold 15px $font-family__heading;
+    margin: 30px 0 $layout_indent;
+}
+
+h1,
+.heading-1 {
+    @extend %heading-1;
+    .home & {
+        font-size: 70px;
+    }
+}
+h2,
+.heading-2 {
+    @extend %heading-2;
+    .home & {
+        font-size: 50px;
+        font-weight: bold;
+        @include tablet {
+            font-size: 60px;
+        }
+    }
+}
+h3,
+.heading-3 {
+    @extend %heading-3;
+    .home & {
+        @include tablet {
+            font-size: 32px;
+        }
+    }
+}
+h4,
+.heading-4 {
+    @extend %heading-4;
+    @include tablet {
+        font-size: 24px;
+    }
+}
+h5,
+.heading-5 {
+    @extend %heading-5;
+}
+h6,
+.heading-6 {
+    @extend %heading-6;
+}

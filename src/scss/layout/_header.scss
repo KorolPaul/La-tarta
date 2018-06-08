@@ -1,0 +1,17 @@
+.header {
+    background: $bg_color;
+
+    .alt-bg & {
+        background: $bg_color__alt;
+    }
+    &_content {
+        min-height: 80px;
+        @include tablet-wide {
+            @include layout;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

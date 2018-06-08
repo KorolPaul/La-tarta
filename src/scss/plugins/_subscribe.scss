@@ -1,0 +1,54 @@
+.es {
+    &_lablebox {
+        display: none;
+    }
+    &_shortcode_form {
+        position: relative;
+        display: flex;
+    }
+    &_msg {
+        color: $light_color;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    &_button {
+        padding: 0;
+        margin: 0 0 0 -35px;
+    }
+    &_submit_button[type="button"],
+    &_submit_button[type="submit"] {
+        @extend %button;
+        box-sizing: content-box;
+        background: $light_color;
+        border-radius: 35px;
+        color: $color;
+        height: 40px;
+        line-height: 40px;
+        min-width: inherit;
+        font-size: 16px;
+        width: auto;
+        @include tablet {
+            font-size: $font-size;
+        }
+
+        &:hover {
+            background: #ccc;
+            color: $color;
+        }
+    }
+    &_textbox_class[type="text"],
+    &_textbox_class[type="email"] {
+        border-radius: 35px;
+        color: $light_color;
+        padding-right: 30px;
+        width: 145px;
+        @include tablet {
+            width: 350px;
+        }
+
+        &:focus {
+            background: transparent;
+        }
+    }
+}

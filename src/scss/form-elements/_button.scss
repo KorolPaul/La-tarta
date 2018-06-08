@@ -1,0 +1,80 @@
+%button {
+    color: #fff;
+    background: #24186b;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    font: 700 18px $font-family;
+    line-height: 60px;
+    height: 60px;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 $layout_indent;
+    overflow: hidden;
+    transition: .2s ease-in-out filter;
+
+    &:hover {
+        filter: contrast(1.4);
+        color: #fff;
+    }
+}
+%big-button {
+    border-radius: 35px;
+    line-height: 70px;
+    height: 70px;
+    font-weight: 800;
+}
+
+.button,
+a.fw-btn,
+button,
+input[type="button"],
+input[type="submit"],  {
+    @extend %button;
+}
+
+a.fw-btn-yellow {
+    background: #ffee4e;
+    color: #24186b;
+}
+a.fw-btn-white {
+    background: #fff;
+    color: #24186b;
+    transition: .2s ease-in-out background,
+                .2s ease-in-out color;
+
+    &:hover {
+        background: #292154;
+        color: #fff;
+    }
+}
+a.fw-btn-big {
+    @extend %big-button;
+    background: linear-gradient(to right, #d23266, #e76748);
+}
+a.fw-btn-big-yellow {
+    @extend %big-button;
+    background: linear-gradient(to right, #e86c49, #ffe140);
+    color: #221931;
+
+    &:hover {
+        color: #221931;
+    }
+}
+a.fw-btn-big-white {
+    @extend %big-button;
+    background: #fff;
+    color: #292154;
+    transition: .2s ease-in-out background,
+                .2s ease-in-out color;
+
+    &:hover {
+        background: #292154;
+        color: #fff;
+    }
+}

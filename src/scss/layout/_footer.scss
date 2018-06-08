@@ -1,0 +1,23 @@
+.footer {
+    background: $bg_color;
+    color: $light_color;
+    padding: 60px 0 80px;
+
+    .alt-bg & {
+        background: $bg_color__alt;
+    }
+    &_content {
+        @include layout;
+        @include tablet {
+            display: flex;
+        }
+    }
+    &_section {
+        flex-grow: 1;
+    }
+    &_title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 15px;
+    }
+}

@@ -49,18 +49,7 @@ layout
 4.7 Logo
 
 Other
-5.0 Net background
-5.1 Press block
-5.2 Countdown block
-5.3 Team block
-5.4 Dividend block
-5.5 Login block
-5.6 How-It-Works block
-5.7 Intro block
-5.8 Roadmap block
-5.9 Text content
-5.10 Full-Width
-5.11 Currencies block
+5.0 location
 --------------------------------------------------------------*/
 
 @import  "const";
@@ -95,12 +84,6 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 
 /*Plugins styling*/
 /*3.0 Underscores plugin */
-@import  "plugins/underscores";
-/*3.1 Subscribe plugin */
-@import  "plugins/subscribe";
-/*3.2 Underscores plugin */
-@import  "plugins/unyson";
-/*3.3 Slick slider */
 @import  "plugins/slick";
 /*3.4 Gallery plugin */
 @import  "plugins/gallery";
@@ -122,30 +105,25 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/error-404";
 /* 4.7 Logo */
 @import  "layout/logo";
+/* 4.8 Currencies */
+@import  "layout/currencies";
+/* 4.9 Cart */
+@import  "layout/cart";
+/* 4.10 Showcase */
+@import  "layout/showcase";
+/* 4.11 Breadcrumbs */
+@import  "layout/breadcrumbs";
+/* 4.11 Post */
+@import  "layout/post";
+/* 4.11 Gallery */
+@import  "layout/gallery";
+/* 4.12 Post navigation */
+@import  "layout/post-navigation";
 
 /*Other*/
-/* 5.0 Net background */
-@import  "other/net";
-/* 5.1 Press block */
-@import  "other/press";
-/* 5.2 Countdown block */
-@import  "other/countdown";
-/* 5.3 Team block */
-@import  "other/team";
-/* 5.4 Dividend block */
-@import  "other/dividend";
-/* 5.5 Login block */
-@import  "other/login";
-/* 5.6 How-It-Works block */
-@import  "other/how-it-works";
-/* 5.7 Intro block */
-@import  "other/intro";
-/* 5.8 Roadmap block */
-@import  "other/roadmap";
-/* 5.9 Text content */
-@import  "other/text-content";
-/* 5.10 Full-Width */
-@import  "other/full-width";
-/* 5.11 Currencies block*/
-@import  "other/currencies";
-
+/* 5.0 Locatoin link */
+@import  "other/location";
+@import  "other/phone-number";
+@import  "other/meta";
+@import  "other/tags";
+@import  "other/share";

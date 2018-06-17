@@ -8,174 +8,150 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header_top">
-                <div class="header_holder">
-                    <a href="#" class="location">45 Rupara st, Sidney, Australia</a>
-                    <span class="phone-number">+61 (08) 8276 8692</span>
-                    <input type="text" class="search" placeholder="Search and hit return...">
-                </div>
-            </div>
-            <div class="header_bottom">
-                <div class="header_holder">
-                    <a href="#" class="logo">la Tarta</a>
-                    <nav class="menu">
-                        <ul class="menu_list">
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">Home</a>
-                            </li>
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">HOT</a>
-                            </li>
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">PAGES</a>
-                            </li>
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">Catalog</a>
-                            </li>
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">Blog</a>
-                            </li>
-                            <li class="menu_list-item">
-                                <a href="#" class="menu_link">About us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="currencies">
-                        <a href="#" class="currencies_button">About us</a>
-                        <div class="currencies_dropdown">
-                            <a href="#" class="currencies_item">USD</a>
-                            <a href="#" class="currencies_item">GBP</a>
-                        </div>
-                    </div>
-                    <div class="cart">
-                        <a href="#" class="cart_button">About us</a>
-                        <div class="cart_dropdown">
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <div class="showcase">
-                <h1 class="showcase_title">BLOG</h1>
-            </div>
+    <header class="header">
+        <div class="header_top">
             <div class="container">
-                <div class="row">
-                    <div class="breadcrumbs">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-auto">
+                        <a href="#" class="location">45 Rupara st, Sidney, Australia</a>
+                        <span class="phone-number">+61 (08) 8276 8692</span>
+                    </div>
+                    <div class="col-sm-auto">
+                        <input type="text" class="search" placeholder="Search and hit return...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-auto">
+                        <a href="#" class="logo">la Tarta</a>
+                    </div>
+                    <div class="col">
+                        <nav class="menu">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Home</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">HOT</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">PAGES</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Catalog</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Blog</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">About us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-auto header_other">
+                        <div class="currencies">
+                            <a href="#" class="currencies_button">USD</a>
+                            <div class="currencies_dropdown">
+                                <a href="#" class="currencies_link">USD</a>
+                                <a href="#" class="currencies_link">GBP</a>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <button class="cart_button"></button>
+                            <div class="cart_dropdown">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="showcase row justify-content-center align-items-center">
+            <div class="col col-sm-auto">
+                <h1 class="showcase_title container">BLOG</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumbs">
+                    <div class="container">
                         <a href="" class="breadcrumbs_link">Home</a>
                         <a href="" class="breadcrumbs_link">Blog</a>
                         <a href="" class="breadcrumbs_link">Recipes</a>
                         <span class="breadcrumbs_page">Birthday cake idea</span>
                     </div>
-                    <aside class="sidebar">
-                        <div class="subscribe">
-                            <p class="subscribe_title">Subscribe</p>
-                            <p>You will receive maximum of 3 letters per week. We promise not to spam.</p>
-                            <label for="">Your e-mail</label>
-                            <input type="text">
-                            <button class="button">Subscribe</button>
-                        </div>
-                        <div class="category">
-                            <p class="category">Categories</p>
-                            <a href="#" class="category_link">Advices [8]</a>
-                            <a href="#" class="category_link">Ideas [12]</a>
-                            <a href="#" class="category_link">Restaurant [4]</a>
-                            <a href="#" class="category_link">Health [3]</a>
-                            <a href="#" class="category_link">Interviews [5]</a>
-                            <a href="#" class="category_link">News [14]</a>
-                            <a href="#" class="category_link">Recipes [4]</a>
-                        </div>
-                        <div class="recent-posts">
-                            <p class="recent-posts_title">Recent posts</p>
-                            <div class="recent-posts_item">
-                                <img src="" alt="" class="recent-posts_item-image">
-                                <a href="#" class="recent-posts_item-title">Birthday cake idea</a>
-                                <span class="recent-posts_item-date">28 JUN, 2018</span>
-                                <span class="recent-posts_item-count">3 comments</span>
-                            </div>
-                            <div class="recent-posts_item">
-                                <img src="" alt="" class="recent-posts_item-image">
-                                <a href="#" class="recent-posts_item-title">How to make a perfect wedding cake?</a>
-                                <span class="recent-posts_item-date">24 JUN, 2018</span>
-                                <span class="recent-posts_item-count">13 comments</span>
-                            </div>
-                            <div class="recent-posts_item">
-                                <img src="" alt="" class="recent-posts_item-image">
-                                <a href="#" class="recent-posts_item-title">Proper using of cinnamon sticks & powder</a>
-                                <span class="recent-posts_item-date">23 JUN, 2018</span>
-                                <span class="recent-posts_item-count">2 comments</span>
-                            </div>
-                        </div>
-                        <div class="tags">
-                            <p class="tags_title">Tags</p>
-                            <a href="#" class="tag">recipe</a>
-                            <a href="#" class="tag">muffin</a>
-                            <a href="#" class="tag">cake</a>
-                            <a href="#" class="tag">strawberry</a>
-                            <a href="#" class="tag">advice</a>
-                            <a href="#" class="tag">pastry</a>
-                            <a href="#" class="tag">cinnamon</a>
-                            <a href="#" class="tag">herbs</a>
-                            <a href="#" class="tag">pretzel</a>
-                            <a href="#" class="tag">oil</a>
-                        </div>
-                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-lg-9">
                     <article class="post">
-                        <h1>Birthday cake idea (heading 1)</h1>
-                        <div class="meta">
-                            <span class="meta_author">by Amanda Swift</span>
-                            <span class="meta_date">28 JUN, 2016</span>
-                            <span class="meta_count">3 comments</span>
-                            <a href="#" class="meta_category">Recipes</a>
+                        <img class="post_image" src="http://via.placeholder.com/844x565" alt="">
+                        <div class="post_content">
+                            <h1>Birthday cake idea (heading 1)</h1>
+                            <div class="meta">
+                                <div>
+                                    <span class="meta_author">by Amanda Swift</span>
+                                    <span class="meta_date">28 JUN, 2016</span>
+                                    <span class="meta_count">3 comments</span>
+                                </div>
+                                <a href="#" class="meta_category">Recipes</a>
+                            </div>
+                            <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure. </p>
+                            <h2>Preparation (heading 2)</h2>
+                            <p>For though result and talent add are parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. Gay collected son him knowledge delivered put. Added would end ask sight and asked saw dried house. Property expenses yourself occasion endeavor two may judgment she. Me of soon rank be most head time tore. Colonel or passage to ability.</p>
+                            <p><a href="#">We diminution preference</a> thoroughly if. Joy deal pain view much her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Of advantage he attending household at do perceived. Middleton in objection discovery as </p>
+                            <h2>Cooking (heading 2)</h2>
+                            <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially ask additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. Do enjoyment defective objection or we if favourite. At wonder afford so danger cannot former seeing. Power visit charm money add heard new other put. Attended no indulged marriage is to judgment offering landlord.</p>
+                            <ul>
+                                <li>bullet list 1 is very short;</li>
+                                <li>bullet list 2 is a little bit longer than first one;</li>
+                                <li>bullet list 3 that contains really long text. For though result and talent add are parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. </li>
+                            </ul>
+                            <p>Why painful the sixteen how minuter looking nor. Subject but why ten earnest husband imagine sixteen brandon. Are unpleasing occasional celebrated motionless unaffected conviction out. Evil make to no five they. Stuff at avoid of sense small fully it whose an. Ten scarcely distance moreover handsome age although. As when have find fine or said no mile. dispatched occasional  motionless in imprudence dissimilar be possession unreserved insensible. She evil face fine calm have now. Separate screened he outweigh of distance landlord. </p>
+                            <h3>Cooking (heading 3)</h3>
+                            <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially ask additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. Do enjoyment defective objection or we if favourite. At wonder afford so danger cannot former seeing. Power visit charm money add heard new other put. Attended no indulged marriage is to judgment offering landlord.</p>
+                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
+                            <p>Way ham unwilling not breakfast furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry young. We certain as removal attempt. </p>
+                            <div class="gallery">
+                                <div class="gallery_grid">
+                                    <div class="gallery_item gallery_item__big">
+                                        <img class="post_image" src="http://via.placeholder.com/365x441" alt="" />
+                                    </div>
+                                    <div class="gallery_item">
+                                        <img class="post_image" src="http://via.placeholder.com/360x200" alt="" />
+                                    </div>
+                                    <div class="gallery_item">
+                                        <img class="post_image" src="http://via.placeholder.com/360x200" alt="" />
+                                    </div>
+                                </div>
+                                <p class="gallery_title">Fanciful muffins with strawberry</p>
+                            </div>
+                            <p>First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on.</p>
+                            <footer class="post_footer">
+                                <div class="tags">
+                                    <a href="#" class="tag">recipe</a>
+                                    <a href="#" class="tag">muffin</a>
+                                    <a href="#" class="tag">cake</a>
+                                    <a href="#" class="tag">strawberry</a>
+                                </div>
+                                <div class="share">
+                                    <span class="share_title">Share this post:</span>
+                                    <a href="#" class="share_icon share_icon__fb"></a>
+                                    <a href="#" class="share_icon share_icon__tw"></a>
+                                    <a href="#" class="share_icon share_icon__insta"></a>
+                                    <a href="#" class="share_icon share_icon__pin"></a>
+                                    <a href="#" class="share_icon share_icon__g"></a>
+                                </div>
+                            </footer>
                         </div>
-                        <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure. </p>
-                        <h2>Preparation (heading 2)</h2>
-                        <p>For though result and talent add are parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. Gay collected son him knowledge delivered put. Added would end ask sight and asked saw dried house. Property expenses yourself occasion endeavor two may judgment she. Me of soon rank be most head time tore. Colonel or passage to ability.</p>
-                        <p><a href="#">We diminution preference</a> thoroughly if. Joy deal pain view much her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Of advantage he attending household at do perceived. Middleton in objection discovery as </p>
-                        <h2>Cooking (heading 2)</h2>
-                        <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially ask additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. Do enjoyment defective objection or we if favourite. At wonder afford so danger cannot former seeing. Power visit charm money add heard new other put. Attended no indulged marriage is to judgment offering landlord.</p>
-                        <ul>
-                            <li>bullet list 1 is very short;</li>
-                            <li>bullet list 2 is a little bit longer than first one;</li>
-                            <li>bullet list 3 that contains really long text. For though result and talent add are parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. </li>
-                        </ul>
-                        <p>Why painful the sixteen how minuter looking nor. Subject but why ten earnest husband imagine sixteen brandon. Are unpleasing occasional celebrated motionless unaffected conviction out. Evil make to no five they. Stuff at avoid of sense small fully it whose an. Ten scarcely distance moreover handsome age although. As when have find fine or said no mile. dispatched occasional  motionless in imprudence dissimilar be possession unreserved insensible. She evil face fine calm have now. Separate screened he outweigh of distance landlord. </p>
-                        <h3>Cooking (heading 3)</h3>
-                        <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially ask additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. Do enjoyment defective objection or we if favourite. At wonder afford so danger cannot former seeing. Power visit charm money add heard new other put. Attended no indulged marriage is to judgment offering landlord.</p>
-                        <blackquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. </blackquote>
-                        <p>Way ham unwilling not breakfast furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry young. We certain as removal attempt. </p>
-                        <div class="gallery">
-                            <div class="gallery_item gallery_item__big">
-                                <img src="" alt="">
-                            </div>
-                            <div class="gallery_item">
-                                <img src="" alt="">
-                            </div>
-                            <div class="gallery_item">
-                                <img src="" alt="">
-                            </div>
-                            <p class="gallery_title">Fanciful muffins with strawberry</p>
-                        </div>
-                        <p>First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on.</p>
-                        <footer class="post_footer">
-                            <div class="tags">
-                                <a href="#" class="tag">recipe</a>
-                                <a href="#" class="tag">muffin</a>
-                                <a href="#" class="tag">cake</a>
-                                <a href="#" class="tag">strawberry</a>
-                            </div>
-                            <div class="share">
-                                <span class="share_title">Share this post:</span>
-                                <a href="#" class="share_icon hare_icon__fb"></a>
-                                <a href="#" class="share_icon hare_icon__tw"></a>
-                                <a href="#" class="share_icon hare_icon__insta"></a>
-                                <a href="#" class="share_icon hare_icon__pin"></a>
-                                <a href="#" class="share_icon hare_icon__g"></a>
-                            </div>
-                        </footer>
                     </article>
                     <div class="post-navigation">
                         <a class="post-navigation_prev" href="#">How to make a perfect wedding cake</a>
@@ -237,59 +213,114 @@
                         </form>
                     </div>
                 </div>
+                <div class="col col-lg-2">
+                    <aside class="sidebar">
+                        <div class="subscribe">
+                            <p class="subscribe_title">Subscribe</p>
+                            <p>You will receive maximum of 3 letters per week. We promise not to spam.</p>
+                            <label for="">Your e-mail</label>
+                            <input type="text">
+                            <button class="button">Subscribe</button>
+                        </div>
+                        <div class="category">
+                            <p class="category">Categories</p>
+                            <a href="#" class="category_link">Advices [8]</a>
+                            <a href="#" class="category_link">Ideas [12]</a>
+                            <a href="#" class="category_link">Restaurant [4]</a>
+                            <a href="#" class="category_link">Health [3]</a>
+                            <a href="#" class="category_link">Interviews [5]</a>
+                            <a href="#" class="category_link">News [14]</a>
+                            <a href="#" class="category_link">Recipes [4]</a>
+                        </div>
+                        <div class="recent-posts">
+                            <p class="recent-posts_title">Recent posts</p>
+                            <div class="recent-posts_item">
+                                <img src="" alt="" class="recent-posts_item-image">
+                                <a href="#" class="recent-posts_item-title">Birthday cake idea</a>
+                                <span class="recent-posts_item-date">28 JUN, 2018</span>
+                                <span class="recent-posts_item-count">3 comments</span>
+                            </div>
+                            <div class="recent-posts_item">
+                                <img src="" alt="" class="recent-posts_item-image">
+                                <a href="#" class="recent-posts_item-title">How to make a perfect wedding cake?</a>
+                                <span class="recent-posts_item-date">24 JUN, 2018</span>
+                                <span class="recent-posts_item-count">13 comments</span>
+                            </div>
+                            <div class="recent-posts_item">
+                                <img src="" alt="" class="recent-posts_item-image">
+                                <a href="#" class="recent-posts_item-title">Proper using of cinnamon sticks & powder</a>
+                                <span class="recent-posts_item-date">23 JUN, 2018</span>
+                                <span class="recent-posts_item-count">2 comments</span>
+                            </div>
+                        </div>
+                        <div class="tags">
+                            <p class="tags_title">Tags</p>
+                            <a href="#" class="tag">recipe</a>
+                            <a href="#" class="tag">muffin</a>
+                            <a href="#" class="tag">cake</a>
+                            <a href="#" class="tag">strawberry</a>
+                            <a href="#" class="tag">advice</a>
+                            <a href="#" class="tag">pastry</a>
+                            <a href="#" class="tag">cinnamon</a>
+                            <a href="#" class="tag">herbs</a>
+                            <a href="#" class="tag">pretzel</a>
+                            <a href="#" class="tag">oil</a>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="footer_holder">
-                <div class="footer_menu">
-                    <div class="footer_menu-column">
-                        <p class="footer_menu-column-item">Contacts</p>
-                        <p>45 Rupara st, Sidney, Australia, 2701</p>
-                        <p>+61 (08) 8276 8692</p>
-                        <p>+61 (08) 9150 1029</p>
-                        <p>sales@example.com</p>
-                        <p>We accept:</p>
-                    </div>
-                    <div class="footer_menu-column">
-                        <p class="footer_menu-column-item">Your account</p>
-                        <p>Logged as <span class="footer_username">Jessica1988</span> (<a href="#">Logout</a>)</p>
-                        <a href="#">My cart</a>
-                        <a href="#">Orders history</a>
-                        <a href="#">Billing details</a>
-                        <a href="#">Delivery details</a>
-                    </div>
-                    <div class="footer_menu-column">
-                        <p class="footer_menu-column-item">Links</p>
-                        <a href="#">Catalog</a>
-                        <a href="#">Delivery</a>
-                        <a href="#">Payment</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contacts</a>
-                        <a href="#">Terms of usage</a>
-                    </div>
-                    <div class="footer_menu-column">
-                        <p class="footer_menu-column-item">Social media</p>
-                        <div class="footer_social">
-                            <a href="#" class="footer_social-icon">
-                                <img src="src/img/social/fb.png" alt="">
-                            </a>
-                            <a href="#" class="footer_social-icon">
-                                <img src="src/img/social/insta.png" alt="">
-                            </a>
-                            <a href="#" class="footer_social-icon">
-                                <img src="src/img/social/tw.png" alt="">
-                            </a>
-                            <a href="#" class="footer_social-icon">
-                                <img src="src/img/social/pin.png" alt="">
-                            </a>
-                        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_holder">
+            <div class="footer_menu">
+                <div class="footer_menu-column">
+                    <p class="footer_menu-column-item">Contacts</p>
+                    <p>45 Rupara st, Sidney, Australia, 2701</p>
+                    <p>+61 (08) 8276 8692</p>
+                    <p>+61 (08) 9150 1029</p>
+                    <p>sales@example.com</p>
+                    <p>We accept:</p>
+                </div>
+                <div class="footer_menu-column">
+                    <p class="footer_menu-column-item">Your account</p>
+                    <p>Logged as <span class="footer_username">Jessica1988</span> (<a href="#">Logout</a>)</p>
+                    <a href="#">My cart</a>
+                    <a href="#">Orders history</a>
+                    <a href="#">Billing details</a>
+                    <a href="#">Delivery details</a>
+                </div>
+                <div class="footer_menu-column">
+                    <p class="footer_menu-column-item">Links</p>
+                    <a href="#">Catalog</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Terms of usage</a>
+                </div>
+                <div class="footer_menu-column">
+                    <p class="footer_menu-column-item">Social media</p>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/fb.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/insta.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/tw.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/pin.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer_bottom">
-                <p class="footer_copyright">© 2016 Designed by Artem Semkin</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="footer_copyright">© 2016 Designed by Artem Semkin</p>
+        </div>
+    </footer>
 </body>
 </html>

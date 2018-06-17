@@ -1,17 +1,12 @@
 .header {
-    background: $bg_color;
-
-    .alt-bg & {
-        background: $bg_color__alt;
+    &_top {
+        background: $bright_color;
+        padding: 10px 0;
     }
-    &_content {
-        min-height: 80px;
-        @include tablet-wide {
-            @include layout;
-            height: 100px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    &_bottom {
+        padding: 15px 0;
+    }
+    &_other {
+        display: flex;
     }
 }

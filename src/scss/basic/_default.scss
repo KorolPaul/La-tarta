@@ -3,3 +3,46 @@ body {
     color: $color;
     font: $font-size $font-family;
 }
+
+a {
+    color: $link_color;
+    transition: .2s ease-in-out color;
+}
+
+p {
+    line-height: 1.75;
+    margin: 0 0 20px;
+}
+
+ul,
+ol {
+    padding: 0 0 0 20px;
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none;
+        padding: 0 0 0 15px;
+        margin: 0 0 15px;
+        position: relative;
+
+        &::before {
+            content: '>';
+            color: $bright_color;
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            left: 0;
+        }
+    }
+}
+
+blockquote {
+    background: url(#{$img-path}/quote.png) no-repeat;
+    font-size: 20px;
+    line-height: 1.75;
+    margin: 0 0 20px;
+    padding: 20px 0 0 30px;
+}

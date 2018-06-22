@@ -49,18 +49,7 @@ layout
 4.7 Logo
 
 Other
-5.0 Net background
-5.1 Press block
-5.2 Countdown block
-5.3 Team block
-5.4 Dividend block
-5.5 Login block
-5.6 How-It-Works block
-5.7 Intro block
-5.8 Roadmap block
-5.9 Text content
-5.10 Full-Width
-5.11 Currencies block
+5.0 location
 --------------------------------------------------------------*/
 
 @import  "const";
@@ -108,5 +97,26 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/error-404";
 /* 4.7 Logo */
 @import  "layout/logo";
+/* 4.8 Currencies */
+@import  "layout/currencies";
+/* 4.9 Cart */
+@import  "layout/cart";
+/* 4.10 Showcase */
+@import  "layout/showcase";
+/* 4.11 Breadcrumbs */
+@import  "layout/breadcrumbs";
+/* 4.11 Post */
+@import  "layout/post";
+/* 4.11 Gallery */
+@import  "layout/gallery";
+/* 4.12 Post navigation */
+@import  "layout/post-navigation";
 
 
+/*Other*/
+/* 5.0 Locatoin link */
+@import  "other/location";
+@import  "other/phone-number";
+@import  "other/meta";
+@import  "other/tags";
+@import  "other/share";

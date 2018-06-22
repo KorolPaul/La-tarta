@@ -1,0 +1,12 @@
+.tags {
+    margin: 0 0 30px;
+}
+.tag {
+    border-radius: 5px;
+    color: $bright_color;
+    font: bold 12px $font-family__heading;
+    border: 1px solid currentColor;
+    margin: 0 10px 10px 0;
+    padding: 10px 15px;
+    display: inline-block;
+}

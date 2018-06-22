@@ -1,33 +1,5 @@
 %button {
-    color: #fff;
-    background: #24186b;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    display: inline-block;
-    font: 700 18px $font-family;
-    line-height: 60px;
-    height: 60px;
-    min-width: 200px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
     position: relative;
-    padding: 0 $layout_indent;
-    overflow: hidden;
-    transition: .2s ease-in-out filter;
-
-    &:hover {
-        filter: contrast(1.4);
-        color: #fff;
-    }
-}
-%big-button {
-    border-radius: 35px;
-    line-height: 70px;
-    height: 70px;
-    font-weight: 800;
 }
 
 .button,

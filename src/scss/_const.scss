@@ -7,14 +7,17 @@ $light_gradient: linear-gradient(to bottom, #FAF9F8, #DEDFE3);
 $alt_gradient: linear-gradient(to bottom, #231E1E, #1A6960);
 
 $color: #000;
-$link_color: #2b8999;
+$light_color: #fff;
 $bright_color: #ff3478;
+$extra-bright_color: #f2cd3c;
+$link_color: #2b8999;
 
 $font-family: 'Quattrocento', serif;
-$font-family__sans: 'Quattrocento Sans', sans-serif;
+$font-family__heading: 'Quattrocento Sans', sans-serif;
 $font-family__cursive: 'Yellowtail', cursive;
 
 $font-size: 16px;
+$font-size__small: 14px;
 
 $max-width: 1170px;
 $layout_indent: 20px;

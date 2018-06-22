@@ -1,22 +1,48 @@
 .footer {
-    background: $bg_color;
-    padding: 60px 0 80px;
+    background: #333;
+    color: #ccc;
+    padding: 45px 0 0;
 
-    .alt-bg & {
-        background: $bg_color__alt;
+    &_menu-column-title {
+        @extend %heading-2;
+        color: $light_color;
+        margin: 0 0 15px;
     }
-    &_content {
-        @include layout;
-        @include tablet {
-            display: flex;
+    &_menu-column {
+        p {
+            margin: 0 0 13px;
+        }
+        a {
+            color: #ccc;
+            text-decoration: underline;
         }
     }
-    &_section {
-        flex-grow: 1;
-    }
-    &_title {
-        font-size: 18px;
+    &_username {
+        color: $light_color;
         font-weight: bold;
-        margin: 0 0 15px;
+        font-style: italic;
+    }
+    &_social {
+        margin: 0 0 25px;
+    }
+    &_social-icon {
+        margin: 0 8px 0 0;
+    } 
+    &_payment {
+        margin: 25px 0 0;
+    }
+    &_card {
+        margin: 0 10px 0 0;
+    }
+    &_bottom {
+        border-top: 1px solid #616161;
+        margin: 50px 0 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+    &_copyright {
+        color: #888888;
+        font-family: $font-family__heading;
+        margin: 0;
     }
 }

@@ -78,6 +78,8 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "form-elements/radio";
 /* 2.6 Checkbox */
 @import  "form-elements/checkbox";
+@import  "form-elements/label";
+@import  "form-elements/number";
 
 
 /*layout*/
@@ -108,9 +110,11 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 /* 4.11 Post */
 @import  "layout/post";
 /* 4.11 Gallery */
-@import  "layout/gallery";
+@import  "layout/gallery";  
 /* 4.12 Post navigation */
 @import  "layout/post-navigation";
+@import  "layout/comments";
+@import  "layout/sidebar";
 
 
 /*Other*/
@@ -120,3 +124,20 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "other/meta";
 @import  "other/tags";
 @import  "other/share";
+@import  "other/categories";
+@import  "other/subscribe";
+@import  "other/recent-posts";
+@import  "other/search";
+@import  "other/filters";
+@import  "other/info";
+@import  "other/pages";
+@import  "other/banner";
+
+
+/*Catalog*/
+@import  "catalog/catalog";
+@import  "catalog/product";
+
+/*Plugins*/
+@import  "plugins/range";
+

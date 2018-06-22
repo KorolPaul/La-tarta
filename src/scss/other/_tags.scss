@@ -1,6 +1,12 @@
 .tags {
     margin: 0 0 30px;
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
 }
+
 .tag {
     border-radius: 5px;
     color: $bright_color;

@@ -7,6 +7,10 @@ body {
 a {
     color: $link_color;
     transition: .2s ease-in-out color;
+
+    &:hover {
+        color: $link_color__hover;
+    }
 }
 
 p {

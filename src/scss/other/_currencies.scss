@@ -1,9 +1,0 @@
-.currencies {
-    display: none;
-    @include tablet-wide {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        margin: 0 20px;
-    }
-}

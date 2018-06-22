@@ -1,7 +1,6 @@
 .error404 {
     background: $bg_color url(#{$img-path}/404.svg) no-repeat;
     background-size: cover;
-    color: $light_color;
 
     &_wrapper {
         text-align: center;

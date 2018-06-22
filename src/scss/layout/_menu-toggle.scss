@@ -13,16 +13,6 @@
     overflow: visible;
     min-width: inherit;
     z-index: 2;
-    @include media(480px) {
-        left: 35px;
-    }
-    @include tablet {
-        left: 50%;
-        margin: 0 0 0 (-$max-width__article/2 + 20px);
-    }
-    @include tablet-wide {
-        display: none;
-    }
 
     .home & {
         top: 35px;

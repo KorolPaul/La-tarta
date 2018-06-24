@@ -1,5 +1,56 @@
 .catalog {
 
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 50px;
+        position: relative;
+    }
+    &_tab {
+        display: none;
+
+        &.opened {
+            display: block;
+        }
+    }
+    &_mode-icon {
+        background-color: $light_color;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 1px solid $link_color;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        padding: 0;
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+
+        &:hover,
+        &.active {
+            background-color: $link_color;
+        }
+        
+        &__grid {
+            background-image: url(#{$img_path}/grid.png);
+
+            &:hover,
+            &.active {
+                background-image: url(#{$img_path}/grid-white.png);
+            }
+        }
+        &__list {
+            background-image: url(#{$img_path}/list.png);
+
+            &:hover,
+            &.active {
+                background-image: url(#{$img_path}/list-white.png);
+            }
+        }
+    }
+    &_statistics {
+        font-family: $font-family__heading;
+    }
     &_grid {
         display: flex;
         flex-wrap: wrap;

@@ -115,6 +115,9 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/post-navigation";
 @import  "layout/comments";
 @import  "layout/sidebar";
+@import  "layout/content";
+@import  "layout/tabs";
+@import  "layout/slider";
 
 
 /*Other*/
@@ -132,12 +135,23 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "other/info";
 @import  "other/pages";
 @import  "other/banner";
+@import  "other/title";
+@import  "other/steps";
+@import  "other/account";
+@import  "other/ribbons";
+@import  "other/counters";
 
 
 /*Catalog*/
 @import  "catalog/catalog";
+@import  "catalog/catalog-grid";
+@import  "catalog/card";
 @import  "catalog/product";
+@import  "catalog/cart";
+
 
 /*Plugins*/
 @import  "plugins/range";
+@import  "plugins/chosen";
+@import  "plugins/slick";
 

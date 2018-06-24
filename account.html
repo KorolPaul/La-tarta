@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La tarta</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-auto">
+                        <a href="#" class="location">45 Rupara st, Sidney, Australia</a>
+                        <span class="phone-number">+61 (08) 8276 8692</span>
+                    </div>
+                    <div class="col-sm-auto">
+                        <input type="text" class="search" placeholder="Search and hit return...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-auto">
+                        <a href="#" class="logo">la Tarta</a>
+                    </div>
+                    <div class="col">
+                        <nav class="menu">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Home</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">HOT</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">PAGES</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Catalog</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">Blog</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="#" class="menu_link">About us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-auto header_other">
+                        <div class="currencies">
+                            <a href="#" class="currencies_button">USD</a>
+                            <div class="currencies_dropdown">
+                                <a href="#" class="currencies_link">USD</a>
+                                <a href="#" class="currencies_link">GBP</a>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <button class="cart_button"></button>
+                            <div class="cart_dropdown">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="showcase row justify-content-center align-items-center">
+            <div class="col col-sm-auto">
+                <h1 class="showcase_title container">My account</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <a href="" class="breadcrumbs_link">Home</a>
+                        <span class="breadcrumbs_page">My account</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h1>Create an account</h1>
+                    <div class="tabs">
+                        <div class="tabs_buttons">
+                            <button class="tabs_button active" data-tab="1">Personal info</button>
+                            <button class="tabs_button" data-tab="2">Shipping </button>
+                            <button class="tabs_button" data-tab="3">Billing</button>
+                        </div>
+                        <div class="tabs_content">
+                            <div class="tabs_tab active" data-tab="1">
+                                <form class="account" action="">
+                                    <div class="account_row">
+                                        <span class="account_row-title">Full name</span>
+                                        <input class="account_input" type="text" value="Jessica Doe">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">E-mail</span>
+                                        <input class="account_input" type="email" value="customer@example.com">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Password</span>
+                                        <input class="account_input" type="password" value="********">
+                                    </div>
+                                    <div class="account_row account_row__no-border">
+                                        <input type="checkbox" id="subscribe">
+                                        <label for="subscribe">Subscribe to our latest news</label>
+                                    </div>
+                                    <div class="account_row account_row__no-border">
+                                        <button class="button">Update information</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs_tab" data-tab="2">
+                                <form class="account" action="">
+                                    <div class="account_row">
+                                        <span class="account_row-title">Address</span>
+                                        <input class="account_input" type="text" value="48 Luis st. Apt 48">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">City</span>
+                                        <input class="account_input" type="text" value="Sydney">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Postal code</span>
+                                        <input class="account_input" type="text" value="660049">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Country</span>
+                                        <input class="account_input" type="text" value="Australia">
+                                    </div>
+                                    <div class="account_row account_row__no-border">
+                                        <input type="checkbox" id="adress">
+                                        <label for="adress">My shipping address is same as a billing address</label>
+                                    </div>
+                                    <div class="account_row account_row__no-border">
+                                        <button class="button">Update information</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tabs_tab" data-tab="3">
+                                <form class="account" action="">
+                                    <div class="account_row">
+                                        <span class="account_row-title">Address</span>
+                                        <input class="account_input" type="text" value="48 Luis st. Apt 48">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">City</span>
+                                        <input class="account_input" type="text" value="Sydney">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Postal code</span>
+                                        <input class="account_input" type="text" value="660049">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Country</span>
+                                        <input class="account_input" type="text" value="Australia">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Payment method</span>
+                                        <input class="account_input" type="text" value="Payment method">
+                                    </div>
+                                    <div class="account_row">
+                                        <span class="account_row-title">Billing currency</span>
+                                        <input class="account_input" type="text" value="USD">
+                                    </div>
+                                    <div class="account_row account_row__no-border">
+                                        <button class="button">Update information</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_menu row">
+                <div class="footer_menu-column col-md-3">
+                    <p class="footer_menu-column-title">Contacts</p>
+                    <p>45 Rupara st, Sidney, Australia, 2701</p>
+                    <p>+61 (08) 8276 8692</p>
+                    <p>+61 (08) 9150 1029</p>
+                    <p>sales@example.com</p>
+                    <div class="footer_payment">
+                        <p>We accept:</p>
+                        <span class="footer_card">
+                            <img src="src/img/visa.png" alt="">
+                        </span>
+                        <span class="footer_card">
+                            <img src="src/img/mastercard.png" alt="">
+                        </span>
+                        <span class="footer_card">
+                            <img src="src/img/american-express.png" alt="">
+                        </span>
+                        <span class="footer_card">
+                            <img src="src/img/paypal.png" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_menu-column col-md-3">
+                    <p class="footer_menu-column-title">Your account</p>
+                    <p>Logged as
+                        <span class="footer_username">Jessica1988</span> (
+                        <a href="#">Logout</a>)</p>
+                    <p>
+                        <a href="#">My cart</a>
+                    </p>
+                    <p>
+                        <a href="#">Orders history</a>
+                    </p>
+                    <p>
+                        <a href="#">Billing details</a>
+                    </p>
+                    <p>
+                        <a href="#">Delivery details</a>
+                    </p>
+                </div>
+                <div class="footer_menu-column col-md-3">
+                    <p class="footer_menu-column-title">Links</p>
+                    <p>
+                        <a href="#">Catalog</a>
+                    </p>
+                    <p>
+                        <a href="#">Delivery</a>
+                    </p>
+                    <p>
+                        <a href="#">Payment</a>
+                    </p>
+                    <p>
+                        <a href="#">Blog</a>
+                    </p>
+                    <p>
+                        <a href="#">Contacts</a>
+                    </p>
+                    <p>
+                        <a href="#">Terms of usage</a>
+                    </p>
+                </div>
+                <div class="footer_menu-column col-md-3">
+                    <p class="footer_menu-column-title">Social media</p>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/fb.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/insta.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/tw.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/pin.png" alt="">
+                        </a>
+                    </div>
+                    <p>Latest from Instagram</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <p class="footer_copyright">© 2016 Designed by Artem Semkin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var activeStep = 1;
+
+        $('.steps_step button').on('click', function(e) {
+            e.preventDefault();
+
+            if(activeStep < 3) {
+                activeStep++;
+                $('.steps_button, .steps_step').removeClass('active');
+                $('.steps_button:nth-child('+ activeStep +'), .steps_step:nth-child('+ activeStep +')').addClass('active');
+            } 
+
+        });
+    </script>
+</body>
+
+</html>

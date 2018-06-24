@@ -1,0 +1,39 @@
+.catalog-grid {
+    @extend %clearfix;
+
+    &_item {
+        background: #3d4547;
+        color: $light_color;
+        font: 72px $font-family__cursive;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 210px;
+        overflow: hidden;
+        margin: 0 0 30PX;
+
+        &__big {
+            height: 451px;
+            width: 260px;
+            float: left;
+            margin-right: 30px;
+        }
+        &__big-right {
+            float: right;
+            margin-right: 0;
+            margin-left: 30px;
+        }
+    }
+    &_text {
+        position: relative;
+    }
+    &_image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+}

@@ -1,0 +1,30 @@
+.ribbons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 100PX;
+}
+
+.ribbon {
+    background: url(#{$img_path}/showcase-bg.png) repeat-x -14px bottom;
+    width: 30%;
+    color: $light_color;
+    padding: 30px;
+
+    &__purple {
+        background-color: $bright_color;
+    }
+    &__blue {
+        background-color: $link_color;
+    }
+    &__green {
+        background-color: #598132;
+    }
+    
+    &_image {
+        margin: 0 15px 0 0;
+        vertical-align: middle;
+    }
+    &_title {
+        font: bold 26px $font-family__heading;
+    }
+}

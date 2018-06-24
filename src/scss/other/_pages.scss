@@ -1,3 +1,9 @@
 .pages {
+    margin: 50px 0;
+    text-align: center;
 
+    &_link {
+        font: 26px $font-family__heading;
+        margin: 0 13px;
+    }
 }

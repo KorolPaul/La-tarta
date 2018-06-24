@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="header_top">
@@ -65,7 +69,7 @@
                         <div class="cart">
                             <button class="cart_button"></button>
                             <div class="cart_dropdown">
-        
+
                             </div>
                         </div>
                     </div>
@@ -96,178 +100,371 @@
                     <div class="catalog">
                         <div class="catalog_header">
                             <div class="catalog_mode">
-                                <button class="catalog_mode-icon catalog_mode-icon__grid"></button>
-                                <button class="catalog_mode-icon catalog_mode-icon__list"></button>
+                                <button class="catalog_mode-icon catalog_mode-icon__grid tab-button" data-tab="1"></button>
+                                <button class="catalog_mode-icon catalog_mode-icon__list tab-button active" data-tab="2"></button>
+                                <span class="catalog_statistics">Viewing 1-9 of 72 results</span>
                             </div>
-                            <span class="catalog_statistics">Viewing 1-9 of 72 results</span>
-                            <div class="dropdown">Sort by newness</div>
+                            <select>
+                                <option value="">Sort by newness</option>
+                                <option value="">Sort by price</option>
+                            </select>
                         </div>
-                        <div class="catalog_grid">
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Fruits & berries plate</p>
-                                <p class="product_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$12.50</span>
-                                        <span class="product_price-old">$18.00</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
+                        <div class="catalog_tabs">
+                            <div class="catalog_tab" data-tab="1">
+                                <div class="catalog_grid">
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Fruits & berries plate</p>
+                                                <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
+                                                    my company thought wishing colonel it </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$12.50</span>
+                                                    <span class="product-card_price-old">$18.00</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button class="button button__filled">Add to cart</button>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Brownie with cogniac</p>
+                                                <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
+                                                    Tiled way blind lived whose new. The for fully had she there leave merit
+                                                    enjoy forth. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$17.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Waffles with topping</p>
+                                                <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                    off. Connection stimulated estimating excellence an to impression. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$8.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Rolled pancakes with banana</p>
+                                                <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
+                                                    my company thought wishing colonel it </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$12.50</span>
+                                                    <span class="product-card_price-old">$18.00</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Chocolate cake with berries and fruits</p>
+                                                <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
+                                                    Tiled way blind lived whose new. The for fully had she there leave merit
+                                                    enjoy forth. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$17.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Cheese cake with berries and fruits</p>
+                                                <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                    off. Connection stimulated estimating excellence an to impression. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$8.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="banner">
+                                        <img src="http://via.placeholder.com/846x215" alt="">
+                                    </div>
+                                    <div class="catalog_grid">
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Rolled pancakes with banana</p>
+                                                <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
+                                                    my company thought wishing colonel it </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$12.50</span>
+                                                    <span class="product-card_price-old">$18.00</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Chocolate cake with berries and fruits</p>
+                                                <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
+                                                    Tiled way blind lived whose new. The for fully had she there leave merit
+                                                    enjoy forth. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$17.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Cheese cake with berries and fruits</p>
+                                                <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                    off. Connection stimulated estimating excellence an to impression. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$8.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Brownie with cogniac</p>
-                                <p class="product_description">Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$17.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
+                            <div class="catalog_tab opened" data-tab="2">
+                                <div class="catalog_list">
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Fruits & berries plate</p>
+                                                <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
+                                                    my company thought wishing colonel it </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">
+                                                        $12.50
+                                                        <span class="product-card_price-old">$18.00</span>
+                                                    </span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button class="button button__filled">Add to cart</button>
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Brownie with cogniac</p>
+                                                <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
+                                                    Tiled way blind lived whose new. The for fully had she there leave merit
+                                                    enjoy forth. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$17.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Waffles with topping</p>
+                                                <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                    off. Connection stimulated estimating excellence an to impression.
+                                                </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$8.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Fruits & berries plate</p>
+                                                <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
+                                                    my company thought wishing colonel it </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$12.50</span>
+                                                    <span class="product-card_price-old">$18.00</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Brownie with cogniac</p>
+                                                <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
+                                                    Tiled way blind lived whose new. The for fully had she there leave merit
+                                                    enjoy forth. </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$17.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card product-card__wide">
+                                        <img src="http://via.placeholder.com/260x390" alt="" class="product-card_image">
+                                        <div class="product-card_content">
+                                            <div class="product-card_text">
+                                                <p class="product-card_title">Waffles with topping</p>
+                                                <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                    off. Connection stimulated estimating excellence an to impression.
+                                                </p>
+                                            </div>
+                                            <div class="product-card_bottom">
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$8.50</span>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="button button__filled">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Waffles with topping</p>
-                                <p class="product_description">Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$8.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Rolled pancakes with banana</p>
-                                <p class="product_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$12.50</span>
-                                        <span class="product_price-old">$18.00</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Chocolate cake with berries and fruits</p>
-                                <p class="product_description">Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$17.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Cheese cake with berries and fruits</p>
-                                <p class="product_description">Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$8.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
+                                <div class="pages">
+                                    <a href="#" class="pages_link">«</a>
+                                    <span class="pages_link">1</span>
+                                    <a href="#" class="pages_link">2</a>
+                                    <a href="#" class="pages_link">3</a>
+                                    <a href="#" class="pages_link">4</a>
+                                    <a href="#" class="pages_link">5</a>
+                                    <a href="#" class="pages_link">6</a>
+                                    <a href="#" class="pages_link">...</a>
+                                    <a href="#" class="pages_link">26</a>
+                                    <a href="#" class="pages_link">«</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="banner">
-                            <img src="http://via.placeholder.com/846x215" alt="">
-                        </div>
-                        <div class="catalog_grid">
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Rolled pancakes with banana</p>
-                                <p class="product_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$12.50</span>
-                                        <span class="product_price-old">$18.00</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Chocolate cake with berries and fruits</p>
-                                <p class="product_description">Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$17.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img src="http://via.placeholder.com/260x260" alt="" class="product_image">
-                                <p class="product_title">Cheese cake with berries and fruits</p>
-                                <p class="product_description">Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. </p>
-                                <div class="product_bottom">.
-                                    <div class="product_price">
-                                        <span class="product_price-value">$8.50</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" type="text" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
-                                    </div>
-                                    <button class="button button__filled">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pages">
-                        <a href="#" class="pages_link">«</a>
-                        <span class="pages_link">1</span>
-                        <a href="#" class="pages_link">2</a>
-                        <a href="#" class="pages_link">3</a>
-                        <a href="#" class="pages_link">4</a>
-                        <a href="#" class="pages_link">5</a>
-                        <a href="#" class="pages_link">6</a>
-                        <a href="#" class="pages_link">...</a>
-                        <a href="#" class="pages_link">26</a>
-                        <a href="#" class="pages_link">«</a>
                     </div>
                 </div>
                 <div class="col col-lg-3">
@@ -277,14 +474,17 @@
                             <div class="filters_item">
                                 <label for="">Price:</label>
                                 <span class="filters_value">
-                                    $<span class="value-1">0</span>  —  $<span class="value-2">100</span>
+                                    $
+                                    <span class="value-1">0</span> — $
+                                    <span class="value-2">100</span>
                                 </span>
                                 <input type="text" id="price">
                             </div>
                             <div class="filters_item">
                                 <label for="">Weight:</label>
                                 <span class="filters_value">
-                                    <span class="value-1">0</span>g  —  <span class="value-2">2000</span>g
+                                    <span class="value-1">0</span>g —
+                                    <span class="value-2">2000</span>g
                                 </span>
                                 <input type="text" id="weight">
                             </div>
@@ -305,7 +505,7 @@
                             </div>
                         </div>
                         <div class="categories">
-                            <p class="categories_title">Products</p>
+                            <p class="categories_title">cards</p>
                             <a href="#" class="categories_special">% SPECIAL DEAL %</a>
                             <a href="#" class="categories_link">Cakes & deserts</a>
                             <a href="#" class="categories_link">Muffins</a>
@@ -318,7 +518,8 @@
                         <div class="info">
                             <p class="info_title">Info</p>
                             <div class="info_text">
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years </p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                                    of classical Latin literature from 45 BC, making it over 2000 years </p>
                             </div>
                         </div>
                     </aside>
@@ -353,20 +554,42 @@
                 </div>
                 <div class="footer_menu-column col-md-3">
                     <p class="footer_menu-column-title">Your account</p>
-                    <p>Logged as <span class="footer_username">Jessica1988</span> (<a href="#">Logout</a>)</p>
-                    <p><a href="#">My cart</a></p>
-                    <p><a href="#">Orders history</a></p>
-                    <p><a href="#">Billing details</a></p>
-                    <p><a href="#">Delivery details</a></p>
+                    <p>Logged as
+                        <span class="footer_username">Jessica1988</span> (
+                        <a href="#">Logout</a>)</p>
+                    <p>
+                        <a href="#">My cart</a>
+                    </p>
+                    <p>
+                        <a href="#">Orders history</a>
+                    </p>
+                    <p>
+                        <a href="#">Billing details</a>
+                    </p>
+                    <p>
+                        <a href="#">Delivery details</a>
+                    </p>
                 </div>
                 <div class="footer_menu-column col-md-3">
                     <p class="footer_menu-column-title">Links</p>
-                    <p><a href="#">Catalog</a></p>
-                    <p><a href="#">Delivery</a></p>
-                    <p><a href="#">Payment</a></p>
-                    <p><a href="#">Blog</a></p>
-                    <p><a href="#">Contacts</a></p>
-                    <p><a href="#">Terms of usage</a></p>
+                    <p>
+                        <a href="#">Catalog</a>
+                    </p>
+                    <p>
+                        <a href="#">Delivery</a>
+                    </p>
+                    <p>
+                        <a href="#">Payment</a>
+                    </p>
+                    <p>
+                        <a href="#">Blog</a>
+                    </p>
+                    <p>
+                        <a href="#">Contacts</a>
+                    </p>
+                    <p>
+                        <a href="#">Terms of usage</a>
+                    </p>
                 </div>
                 <div class="footer_menu-column col-md-3">
                     <p class="footer_menu-column-title">Social media</p>
@@ -398,23 +621,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        $("#price").slider({
-            min: 10,
-            max: 100,
-            range: true
-        }).on('slide', function(e) {
-            $(this).parent().find('.value-1').html(e.value[0]);
-            $(this).parent().find('.value-2').html(e.value[1]);
-        });
-        $("#weight").slider({
-            min: 10,
-            max: 2000,
-            range: true
-        }).on('slide', function(e) {
-            $(this).parent().find('.value-1').html(e.value[0]);
-            $(this).parent().find('.value-2').html(e.value[1]);
-        });
-    </script>
 </body>
+
 </html>

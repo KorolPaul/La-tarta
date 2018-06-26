@@ -1,5 +1,4 @@
 .product-card {
-    min-width: 265px;
     width: 30%;
     box-shadow: 0 0 0 2px #f0f0f0;
     margin: 0 0 30px;
@@ -12,6 +11,9 @@
 
     .catalog_grid__full & {
         width: 23%;
+    }
+    .menu & {
+        margin: 0 15px;
     }
 
     &_image {

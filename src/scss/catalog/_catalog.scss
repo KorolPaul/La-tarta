@@ -55,5 +55,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        &__menu {
+            flex-wrap: nowrap;
+        }
     }
 }

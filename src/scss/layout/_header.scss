@@ -8,5 +8,9 @@
     }
     &_other {
         display: flex;
+        align-items: center;
+    }
+    &_holder {
+        position: relative;
     }
 }

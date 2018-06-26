@@ -2,6 +2,9 @@
     border: 1px solid $link_color;
     border-radius: 4px;
 
+    &__mini {
+        border: none;
+    }
     &_title {
         background: $link_color;
         padding: 25px 45px;
@@ -10,6 +13,7 @@
     }
     &_content {
         padding: 25px 45px 50px;
+        min-width: 500px;
     }
     &_table {
         width: 100%;

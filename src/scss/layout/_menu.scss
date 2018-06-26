@@ -5,12 +5,78 @@
         padding: 0;
         margin: 0;
     }
+    &_list-item {
+        padding: 43px 0;
+        margin: 0 38px;
+
+        &__parent {
+            position: relative;
+        }
+    }
     &_link {
         font-family: $font-family__heading;
         font-weight: bold;
         text-decoration: none;
         text-transform: uppercase;
-        margin: 0 38px;
         display: block;
+        transition-duration: .1s;
+        
+        &:hover {
+            color: $bright_color;
+            text-decoration: none;
+        }
+        .menu_list-item__parent & {
+            background: url(#{$img_path}/arrow-down.png) no-repeat 100% center;
+            padding-right: 15px;
+
+            &:hover {
+                background-image: url(#{$img_path}/arrow-down-hover.png);
+            }
+        }
+    }
+    &_sublist {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+        background: $light_color;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        transform: translate(0, -20px);
+        z-index: -1;
+        transition: .2s ease-in-out opacity,
+                    .2s ease-in-out transform,
+                    0s ease-in-out .2s z-index;
+
+        .menu_list-item:hover & {
+            opacity: 1;
+            transform: translate(0, 0);
+            z-index: 1;
+            transition: .2s ease-in-out opacity,
+                        .2s ease-in-out transform,
+                        0s ease-in-out z-index;
+        }
+        &__catalog {
+            padding: 40px;
+            right: 0;
+        }
+    }
+    &_sublist-item {
+        padding: 0;
+        margin: 0 30px;
+        border-top: 1px solid #e3e3e6;
+
+        &:first-child {
+            border: none;
+        }
+    }
+    &_sublist-link {
+        display: block;
+        padding: 15px 0;
+        text-transform: none;
+        white-space: nowrap;
+        max-width: 300px;
     }
 }

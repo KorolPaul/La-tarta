@@ -26,30 +26,64 @@ Base
 Form elements
 2.0 Buttons
 2.1 Text input
-2.3 Textarea
-2.4 Range
-2.5 Radio
-2.6 Checkbox
+2.2 Textarea
+2.3 Radio
+2.4 Checkbox
+2.5 Label
+2.6 Number
 
-Plugins styling
-3.0 Underscores plugin
-3.1 Subscribe plugin
-3.2 Underscores plugin
-3.3 Slick slider
-3.4 Gallery plugin
-
-layout
-4.0 Headings
-4.1 Header
-4.2 Footer
-4.3 Main menu
-4.4 Social
-4.5 Toggle menu button
-4.6 404 page
-4.7 Logo
+Layout
+3.0 Headings
+3.1 Header
+3.2 Footer
+3.3 Main menu
+3.4 Social
+3.5 Toggle menu button
+3.6 404 page
+3.7 Logo
+3.8 Currencies
+3.9 Cart
+3.10 Showcase
+3.11 Breadcrumbs
+3.12 Post
+3.13 Gallery
+3.14 Post navigation
+3.15 Comments
+3.16 Sidebar
+3.17 Content holder
+3.18 Tabs
+3.19 Slider
 
 Other
-5.0 location
+ 4.0 Locatoin link
+ 4.1 Phone number
+ 4.2 Post meta
+ 4.3 Tags
+ 4.4 Share icons
+ 4.5 Catalog categories
+ 4.6 Subscribe form
+ 4.7 Recent posts
+ 4.8 Search
+ 4.9 Filters
+ 4.10 INfo
+ 4.11 Pagination
+ 4.12 Banner
+ 4.13 Title
+ 4.14 Signup steps
+ 4.15 Account
+ 4.16 Ribbons
+ 4.17 Counters
+
+Catalog
+5.1 Catalog
+5.2 Catalog grid
+5.3 Card
+5.4 Product
+5.5 Cart
+
+Plugins styling
+
+
 --------------------------------------------------------------*/
 
 @import  "const";
@@ -72,87 +106,118 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "form-elements/button";
 /* 2.1 Text input */
 @import  "form-elements/input-text";
-/* 2.3 Textarea */
+/* 2.2 Textarea */
 @import  "form-elements/textarea";
-/* 2.5 Radio */
+/* 2.3 Radio */
 @import  "form-elements/radio";
-/* 2.6 Checkbox */
+/* 2.4 Checkbox */
 @import  "form-elements/checkbox";
+/* 2.5 Label */
 @import  "form-elements/label";
+/* 2.6 Number */
 @import  "form-elements/number";
 
 
 /*layout*/
-/* 4.0 Headings */
+/* 3.0 Headings */
 @import  "layout/headings";
-/* 4.1 Header */
+/* 3.1 Header */
 @import  "layout/header";
-/* 4.2 Footer */
+/* 3.2 Footer */
 @import  "layout/footer";
-/* 4.3 Main menu */
+/* 3.3 Main menu */
 @import  "layout/menu";
-@import  "layout/menu-toggle";
-/* 4.4 Social */
+/* 3.4 Social */
 @import  "layout/social";
-/* 4.5 Toggle menu button */
+/* 3.5 Toggle menu button */
 @import  "layout/menu-toggle";
-/* 4.6 404 page */
+/* 3.6 404 page */
 @import  "layout/error-404";
-/* 4.7 Logo */
+/* 3.7 Logo */
 @import  "layout/logo";
-/* 4.8 Currencies */
+/* 3.8 Currencies */
 @import  "layout/currencies";
-/* 4.9 Cart */
+/* 3.9 Cart */
 @import  "layout/cart";
-/* 4.10 Showcase */
+/* 3.10 Showcase */
 @import  "layout/showcase";
-/* 4.11 Breadcrumbs */
+/* 3.11 Breadcrumbs */
 @import  "layout/breadcrumbs";
-/* 4.11 Post */
+/* 3.12 Post */
 @import  "layout/post";
-/* 4.11 Gallery */
+/* 3.13 Gallery */
 @import  "layout/gallery";  
-/* 4.12 Post navigation */
+/* 3.14 Post navigation */
 @import  "layout/post-navigation";
+/* 3.15 Comments */
 @import  "layout/comments";
+/* 3.16 Sidebar */
 @import  "layout/sidebar";
+/* 3.17 Content holder */
 @import  "layout/content";
+/* 3.18 Tabs */
 @import  "layout/tabs";
+/* 3.19 Slider */
 @import  "layout/slider";
 
 
 /*Other*/
-/* 5.0 Locatoin link */
+/* 4.0 Locatoin link */
 @import  "other/location";
+/* 4.1 Phone number */
 @import  "other/phone-number";
+/* 4.2 Post meta */
 @import  "other/meta";
+/* 4.3 Tags */
 @import  "other/tags";
+/* 4.4 Share icons */
 @import  "other/share";
+/* 4.5 Catalog categories */
 @import  "other/categories";
+/* 4.6 Subscribe form */
 @import  "other/subscribe";
+/* 4.7 Recent posts */
 @import  "other/recent-posts";
+/* 4.8 Search */
 @import  "other/search";
+/* 4.9 Filters */
 @import  "other/filters";
+/* 4.10 INfo */
 @import  "other/info";
+/* 4.11 Pagination */
 @import  "other/pages";
+/* 4.12 Banner */
 @import  "other/banner";
+/* 4.13 Title */
 @import  "other/title";
+/* 4.14 Signup steps */
 @import  "other/steps";
+/* 4.15 Account */
 @import  "other/account";
+/* 4.16 Ribbons */
 @import  "other/ribbons";
+/* 4.17 Counters */
 @import  "other/counters";
 
 
 /*Catalog*/
+/* 5.1 Catalog */
 @import  "catalog/catalog";
+/* 5.2 Catalog grid */
 @import  "catalog/catalog-grid";
+/* 5.3 Card */
 @import  "catalog/card";
+/* 5.4 Product */
 @import  "catalog/product";
+/* 5.5 Cart */
 @import  "catalog/cart-form";
 
 
 /*Plugins*/
+/* 6.1 Range input */
 @import  "plugins/range";
+/* 6.1 Dropdown */
 @import  "plugins/chosen";
+/* 6.1 Slider plugin */
 @import  "plugins/slick";
 

@@ -11,11 +11,8 @@
 @mixin tablet() {
     @media all and (min-width: 768px) { @content; }
 }
-@mixin tablet-wide() {
-    @media all and (min-width: 992px) { @content; }
-}
 @mixin desktop() {
-    @media all and (min-width: 1240px) { @content; }
+    @media all and (min-width: 960px) { @content; }
 }
 @mixin media($resolution) {
     @media all and (min-width: $resolution) { @content; }

@@ -1,6 +1,8 @@
 .steps {
     margin: auto;
-    width: 320px;
+    @include tablet {
+        width: 320px;
+    }
 
     &_buttons {
         display: flex;
@@ -54,7 +56,10 @@
     &_content {
         border: 2px solid #f0f0f0;
         border-radius: 5px;
-        padding: 28px;
+        padding: 15px;
+        @include tablet {
+            padding: 28px;
+        }
     }
     &_step {
         display: none;

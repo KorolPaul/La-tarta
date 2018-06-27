@@ -1,16 +1,22 @@
 .counters {
     background: #ccc;
     margin: 0 0 80px;
+    padding: 0 15px;
 
     &_holder {
-        display: flex;
-        justify-content: space-between;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &_item {
         color: $light_color;
         text-align: center;
-        width: 200px;
-        padding: 100px 0 90px;
+        padding: 30px 0;
+        @include tablet {
+            padding: 100px 0 90px;
+            width: 200px;
+        }
     }
     &_value {
         display: block;

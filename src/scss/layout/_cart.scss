@@ -1,4 +1,9 @@
 .cart {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+
     &_button {
         background: url(#{$img-path}/cart.png) no-repeat;
         border: none;

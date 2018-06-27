@@ -89,6 +89,10 @@
   z-index: 1;
   opacity: .5;
   transition: .2s ease-in-out opacity;
+  display: none;
+  @include tablet {
+      display: block;
+  }
 
   &:hover {
     background-color: transparent;

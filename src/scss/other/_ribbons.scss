@@ -1,14 +1,26 @@
 .ribbons {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 100PX;
+    margin: 0 0 30px;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 100px;
+    }
 }
 
 .ribbon {
     background: url(#{$img_path}/showcase-bg.png) repeat-x -14px bottom;
-    width: 30%;
     color: $light_color;
-    padding: 30px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 0 20px;
+    @include tablet {
+        padding: 30px;
+        width: 30%;
+        margin: 0;
+    }
+    @include desktop {
+        text-align: left;
+    }
 
     &__purple {
         background-color: $bright_color;
@@ -21,8 +33,13 @@
     }
     
     &_image {
-        margin: 0 15px 0 0;
+        margin: 0 auto 15px;
         vertical-align: middle;
+        display: block;
+        @include desktop {
+            display: inline;
+            margin: 0 15px 0 0;
+        }
     }
     &_title {
         font: bold 26px $font-family__heading;

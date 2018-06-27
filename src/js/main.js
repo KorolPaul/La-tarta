@@ -1,5 +1,17 @@
 $(document).ready(function () { 
 
+    /* Menu toggle */
+    $('.menu-toggle').on('click', function(e) {
+        e.preventDefault();
+        $(this).next().toggleClass('opened');
+    });
+
+    $('.menu_list-item__parent a').on('click', function(e) {
+        e.preventDefault();
+        $(this).next().toggleClass('opened');
+    });
+
+
     /* Dropdown */
     $("select").chosen({
         disable_search: true,

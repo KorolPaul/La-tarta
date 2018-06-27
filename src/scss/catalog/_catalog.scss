@@ -1,11 +1,19 @@
 .catalog {
 
     &_header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin: 0 0 50px;
         position: relative;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &_mode {
+        margin: 0 0 20px;
+        @include tablet {
+            margin: 0;
+        }
     }
     &_tab {
         display: none;

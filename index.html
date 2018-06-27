@@ -13,63 +13,245 @@
     <script src="src/js/slick.js"></script>
     <script src="src/js/main.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="header_top">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-auto">
+                    <div class="col-12 col-md-auto">
                         <a href="#" class="location">45 Rupara st, Sidney, Australia</a>
                         <span class="phone-number">+61 (08) 8276 8692</span>
                     </div>
-                    <div class="col-sm-auto">
+                    <div class="col-12 col-md-auto">
                         <input type="text" class="search" placeholder="Search and hit return...">
                     </div>
                 </div>
             </div>
         </div>
         <div class="header_bottom">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-auto">
+            <div class="container header_holder">
+                <div class="row justify-content-between align-items-center header_row">
+                    <div class="col-auto col-lg-1">
                         <a href="#" class="logo">la Tarta</a>
                     </div>
-                    <div class="col">
-                        <nav class="menu">
+                    <button class="menu-toggle col-auto"></button>
+                    <nav class="col-auto col-lg-8 menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_link">Home</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_link">HOT</a>
+                                <ul class="menu_sublist menu_sublist__catalog">
+                                    <div class="catalog">
+                                        <div class="catalog_grid catalog_grid__menu">
+                                            <div class="product-card">
+                                                <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                                <div class="product-card_content">
+                                                    <div class="product-card_text">
+                                                        <p class="product-card_title">Chocolate cake with berries and fruits</p>
+                                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in
+                                                            excellence. Tiled way blind lived whose new. The for fully had
+                                                            she there leave merit enjoy forth. </p>
+                                                    </div>
+                                                    <div class="product-card_bottom">
+                                                        <div class="product-card_price">
+                                                            <span class="product-card_price-value">$17.50</span>
+                                                            <div class="number">
+                                                                <button class="number_button">-</button>
+                                                                <input class="number_input" value="1">
+                                                                <button class="number_button">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="button button__filled">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-card">
+                                                <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                                <div class="product-card_content">
+                                                    <div class="product-card_text">
+                                                        <p class="product-card_title">Rolled pancakes with banana</p>
+                                                        <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any
+                                                            add. Ashamed my company thought wishing colonel it </p>
+                                                    </div>
+                                                    <div class="product-card_bottom">
+                                                        <div class="product-card_price">
+                                                            <span class="product-card_price-value">$12.50</span>
+                                                            <span class="product-card_price-old">$18.00</span>
+                                                            <div class="number">
+                                                                <button class="number_button">-</button>
+                                                                <input class="number_input" value="1">
+                                                                <button class="number_button">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="button button__filled">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-card">
+                                                <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                                <div class="product-card_content">
+                                                    <div class="product-card_text">
+                                                        <p class="product-card_title">Chocolate cake with berries and fruits</p>
+                                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in
+                                                            excellence. Tiled way blind lived whose new. The for fully had
+                                                            she there leave merit enjoy forth. </p>
+                                                    </div>
+                                                    <div class="product-card_bottom">
+                                                        <div class="product-card_price">
+                                                            <span class="product-card_price-value">$17.50</span>
+                                                            <div class="number">
+                                                                <button class="number_button">-</button>
+                                                                <input class="number_input" value="1">
+                                                                <button class="number_button">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="button button__filled">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-card">
+                                                <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                                <div class="product-card_content">
+                                                    <div class="product-card_text">
+                                                        <p class="product-card_title">Cheese cake with berries and fruits</p>
+                                                        <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
+                                                            off. Connection stimulated estimating excellence an to impression.
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-card_bottom">
+                                                        <div class="product-card_price">
+                                                            <span class="product-card_price-value">$8.50</span>
+                                                            <div class="number">
+                                                                <button class="number_button">-</button>
+                                                                <input class="number_input" value="1">
+                                                                <button class="number_button">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="button button__filled">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item menu_list-item__parent">
+                                <a href="#" class="menu_link">PAGES</a>
+                                <ul class="menu_sublist">
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">Blog list posts</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">Blog single post</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">About us</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">Contacts</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">Shopping cart</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">Checkout process</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="#" class="menu_sublist-link">User account</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_link">Catalog</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_link">Blog</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_link">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-auto col-lg-2 header_other">
+                        <div class="menu menu__other">
                             <ul class="menu_list">
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">Home</a>
-                                </li>
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">HOT</a>
-                                </li>
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">PAGES</a>
-                                </li>
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">Catalog</a>
-                                </li>
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">Blog</a>
-                                </li>
-                                <li class="menu_list-item">
-                                    <a href="#" class="menu_link">About us</a>
+                                <li class="menu_list-item menu_list-item__parent">
+                                    <a href="#" class="menu_link">USD</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist-item">
+                                            <a href="#" class="menu_sublist-link">GBP</a>
+                                        </li>
+                                        <li class="menu_sublist-item">
+                                            <a href="#" class="menu_sublist-link">AUD</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </nav>
-                    </div>
-                    <div class="col-sm-auto header_other">
-                        <div class="currencies">
-                            <a href="#" class="currencies_button">USD</a>
-                            <div class="currencies_dropdown">
-                                <a href="#" class="currencies_link">USD</a>
-                                <a href="#" class="currencies_link">GBP</a>
-                            </div>
                         </div>
                         <div class="cart">
                             <button class="cart_button"></button>
                             <div class="cart_dropdown">
-
+                                <div class="cart-form cart-form__mini">
+                                    <div class="cart-form_content">
+                                        <table class="cart-form_table">
+                                            <tr>
+                                                <td>
+                                                    <img src="http://via.placeholder.com/55x55" alt="" class="cart-form_image">
+                                                    <p class="cart-form_table-title">Rolled pancakes with banana</p>
+                                                    <span class="cart-form_table-sum">$18.90</span>
+                                                </td>
+                                                <td>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="http://via.placeholder.com/55x55" alt="" class="cart-form_image">
+                                                    <p class="cart-form_table-title">Rolled pancakes with banana</p>
+                                                    <span class="cart-form_table-sum">$18.90</span>
+                                                </td>
+                                                <td>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="http://via.placeholder.com/55x55" alt="" class="cart-form_image">
+                                                    <p class="cart-form_table-title">Rolled pancakes with banana</p>
+                                                    <span class="cart-form_table-sum">$18.90</span>
+                                                </td>
+                                                <td>
+                                                    <div class="number">
+                                                        <button class="number_button">-</button>
+                                                        <input class="number_input" value="1">
+                                                        <button class="number_button">+</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="cart-form_bottom">
+                                            <div class="cart-form_bottom-col">
+                                                <p class="cart-form_bottom-title">Subtotal:</p>
+                                                <button class="button">Back to shop</button>
+                                            </div>
+                                            <div class="cart-form_bottom-col">
+                                                <p class="cart-form_bottom-title">$64.40</p>
+                                                <button class="button button__filled">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -94,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x640" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x640" alt="">
                 </div>
                 <div class="slick-slider_item">
                     <div class="container slider_holder">
@@ -112,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x640" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x640" alt="">
                 </div>
                 <div class="slick-slider_item">
                     <div class="container slider_holder">
@@ -130,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x640" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x640" alt="">
                 </div>
             </div>
             <div class="slick-slider_navigation container"></div>
@@ -141,24 +323,24 @@
                     <div class="ribbons">
                         <div class="ribbon ribbon__purple">
                             <p class="ribbon_title">
-                                <img class="ribbon_image" src="src/img/ribbon-cake.png" alt="">
-                                Cakes
+                                <img class="ribbon_image" src="src/img/ribbon-cake.png" alt=""> Cakes
                             </p>
-                            <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded incommode. </p>
+                            <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may
+                                instantly was household applauded incommode. </p>
                         </div>
                         <div class="ribbon ribbon__blue">
                             <p class="ribbon_title">
-                                <img class="ribbon_image" src="src/img/ribbon-puff.png" alt="">
-                                Puff pastry
+                                <img class="ribbon_image" src="src/img/ribbon-puff.png" alt=""> Puff pastry
                             </p>
-                            <p>To they four in love. Settling you has separate supplied bed. Concluded resembled suspected his resources curiosity joy. Led all cottage met enabled</p>
+                            <p>To they four in love. Settling you has separate supplied bed. Concluded resembled suspected his
+                                resources curiosity joy. Led all cottage met enabled</p>
                         </div>
                         <div class="ribbon ribbon__green">
                             <p class="ribbon_title">
-                                <img class="ribbon_image" src="src/img/pretzels.png" alt="">
-                                Pretzels
+                                <img class="ribbon_image" src="src/img/pretzels.png" alt=""> Pretzels
                             </p>
-                            <p>Him ham although thoughts entirely drawings. Acceptance unreserved old admiration projection nay yet him. Lasted am so before on esteem vanity oh. </p>
+                            <p>Him ham although thoughts entirely drawings. Acceptance unreserved old admiration projection
+                                nay yet him. Lasted am so before on esteem vanity oh. </p>
                         </div>
                     </div>
                 </div>
@@ -175,7 +357,10 @@
                                 <div class="product-card_content">
                                     <div class="product-card_text">
                                         <p class="product-card_title">Rolled pancakes with banana</p>
-                                        <p class="product-card_description">Piqued favour stairs it enable exeter as seeing. Remainder met improving but engrossed sincerity age. Better but length gay denied abroad are. Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth. </p>
+                                        <p class="product-card_description">Piqued favour stairs it enable exeter as seeing. Remainder met improving but engrossed
+                                            sincerity age. Better but length gay denied abroad are. Attachment astonished
+                                            to on appearance imprudence so collecting in excellence. Tiled way blind lived
+                                            whose new. The for fully had she there leave merit enjoy forth. </p>
                                     </div>
                                     <div class="product-card_bottom">
                                         <div class="product-card_price">
@@ -199,7 +384,10 @@
                                 <div class="product-card_content">
                                     <div class="product-card_text">
                                         <p class="product-card_title">Assorted browniesc</p>
-                                        <p class="product-card_description">He went such dare good mr fact. The small own seven saved man age no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts. </p>
+                                        <p class="product-card_description">He went such dare good mr fact. The small own seven saved man age no offer. Suspicion
+                                            did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression
+                                            reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and
+                                            consisted are pronounce distrusts. </p>
                                     </div>
                                     <div class="product-card_bottom">
                                         <div class="product-card_price">
@@ -221,35 +409,41 @@
                         </div>
                         <div class="catalog_grid catalog_grid__full">
                             <div class="product-card">
-                            <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
-                            <div class="product-card_content">
-                                <div class="product-card_text">
-                                    <p class="product-card_title">Rolled pancakes with banana</p>
-                                    <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed
-                                        my company thought wishing colonel it </p>
-                                </div>
-                                <div class="product-card_bottom">
-                                    <div class="product-card_price">
-                                        <span class="product-card_price-value">$12.50</span>
-                                        <span class="product-card_price-old">$18.00</span>
-                                        <div class="number">
-                                            <button class="number_button">-</button>
-                                            <input class="number_input" value="1">
-                                            <button class="number_button">+</button>
-                                        </div>
+                                <span class="product-card_stripe product-card_stripe__hot">
+                                    <span class="product-card_stripe-text">hot</span>
+                                </span>
+                                <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
+                                <div class="product-card_content">
+                                    <div class="product-card_text">
+                                        <p class="product-card_title">Rolled pancakes with banana</p>
+                                        <p class="product-card_description">Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my
+                                            company thought wishing colonel it </p>
                                     </div>
-                                    <button class="button button__filled">Add to cart</button>
+                                    <div class="product-card_bottom">
+                                        <div class="product-card_price">
+                                            <span class="product-card_price-value">$12.50</span>
+                                            <span class="product-card_price-old">$18.00</span>
+                                            <div class="number">
+                                                <button class="number_button">-</button>
+                                                <input class="number_input" value="1">
+                                                <button class="number_button">+</button>
+                                            </div>
+                                        </div>
+                                        <button class="button button__filled">Add to cart</button>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                             <div class="product-card">
+                                <span class="product-card_stripe product-card_stripe__new">
+                                    <span class="product-card_stripe-text">new</span>
+                                </span>
                                 <img src="http://via.placeholder.com/260x260" alt="" class="product-card_image">
                                 <div class="product-card_content">
                                     <div class="product-card_text">
                                         <p class="product-card_title">Chocolate cake with berries and fruits</p>
-                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
-                                            Tiled way blind lived whose new. The for fully had she there leave merit
-                                            enjoy forth. </p>
+                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence. Tiled
+                                            way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                        </p>
                                     </div>
                                     <div class="product-card_bottom">
                                         <div class="product-card_price">
@@ -269,8 +463,8 @@
                                 <div class="product-card_content">
                                     <div class="product-card_text">
                                         <p class="product-card_title">Cheese cake with berries and fruits</p>
-                                        <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection
-                                            off. Connection stimulated estimating excellence an to impression. </p>
+                                        <p class="product-card_description">Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection
+                                            stimulated estimating excellence an to impression. </p>
                                     </div>
                                     <div class="product-card_bottom">
                                         <div class="product-card_price">
@@ -290,9 +484,9 @@
                                 <div class="product-card_content">
                                     <div class="product-card_text">
                                         <p class="product-card_title">Chocolate cake with berries and fruits</p>
-                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence.
-                                            Tiled way blind lived whose new. The for fully had she there leave merit
-                                            enjoy forth. </p>
+                                        <p class="product-card_description">Attachment astonished to on appearance imprudence so collecting in excellence. Tiled
+                                            way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                        </p>
                                     </div>
                                     <div class="product-card_bottom">
                                         <div class="product-card_price">
@@ -341,19 +535,21 @@
                                 <img src="http://via.placeholder.com/100x100" alt="" class="slick-slider_avatar">
                                 <p class="slick-slider_username">Susan Chivers</p>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/fb-blue.png" alt="" >
+                                    <img src="src/img/social/fb-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/insta-blue.png" alt="" >
+                                    <img src="src/img/social/insta-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/tw-blue.png" alt="" >
+                                    <img src="src/img/social/tw-blue.png" alt="">
                                 </a>
                             </div>
-                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
+                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex
+                                material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration
+                                interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x465" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x465" alt="">
                 </div>
                 <div class="slick-slider_item">
                     <div class="container slick-slider_holder">
@@ -362,19 +558,21 @@
                                 <img src="http://via.placeholder.com/100x100" alt="" class="slick-slider_avatar">
                                 <p class="slick-slider_username">Susan Chivers</p>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/fb-blue.png" alt="" >
+                                    <img src="src/img/social/fb-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/insta-blue.png" alt="" >
+                                    <img src="src/img/social/insta-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/tw-blue.png" alt="" >
+                                    <img src="src/img/social/tw-blue.png" alt="">
                                 </a>
                             </div>
-                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
+                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex
+                                material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration
+                                interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x465" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x465" alt="">
                 </div>
                 <div class="slick-slider_item">
                     <div class="container slick-slider_holder">
@@ -383,19 +581,21 @@
                                 <img src="http://via.placeholder.com/100x100" alt="" class="slick-slider_avatar">
                                 <p class="slick-slider_username">Susan Chivers</p>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/fb-blue.png" alt="" >
+                                    <img src="src/img/social/fb-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/insta-blue.png" alt="" >
+                                    <img src="src/img/social/insta-blue.png" alt="">
                                 </a>
                                 <a href="#" class="slick-slider_social">
-                                    <img src="src/img/social/tw-blue.png" alt="" >
+                                    <img src="src/img/social/tw-blue.png" alt="">
                                 </a>
                             </div>
-                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
+                            <blockquote>Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex
+                                material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration
+                                interested. Departure performed exquisite rapturous so ye me resources. </blockquote>
                         </div>
                     </div>
-                    <img src="http://via.placeholder.com/1900x465" alt="">
+                    <img class=" slick-slider_image" src="http://via.placeholder.com/1900x465" alt="">
                 </div>
             </div>
             <div class="slick-slider_navigation container"></div>
@@ -409,7 +609,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <article class="post post__small">
                         <div class="post_image-wrapper">
                             <img class="post_image" src="http://via.placeholder.com/555x310" alt="">
@@ -428,7 +628,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <article class="post post__small">
                         <div class="post_image-wrapper">
                             <img class="post_image" src="http://via.placeholder.com/555x310" alt="">
@@ -449,7 +649,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <article class="post post__small">
                         <div class="post_image-wrapper">
                             <img class="post_image" src="http://via.placeholder.com/555x310" alt="">
@@ -468,7 +668,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <article class="post post__small">
                         <div class="post_image-wrapper">
                             <img class="post_image" src="http://via.placeholder.com/555x310" alt="">
@@ -493,7 +693,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_menu row">
-                <div class="footer_menu-column col-md-3">
+                <div class="footer_menu-column col-12 col-md-3">
                     <p class="footer_menu-column-title">Contacts</p>
                     <p>45 Rupara st, Sidney, Australia, 2701</p>
                     <p>+61 (08) 8276 8692</p>
@@ -515,7 +715,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="footer_menu-column col-md-3">
+                <div class="footer_menu-column col-12 col-md-3">
                     <p class="footer_menu-column-title">Your account</p>
                     <p>Logged as
                         <span class="footer_username">Jessica1988</span> (
@@ -533,7 +733,7 @@
                         <a href="#">Delivery details</a>
                     </p>
                 </div>
-                <div class="footer_menu-column col-md-3">
+                <div class="footer_menu-column col-12 col-md-3">
                     <p class="footer_menu-column-title">Links</p>
                     <p>
                         <a href="#">Catalog</a>
@@ -554,7 +754,7 @@
                         <a href="#">Terms of usage</a>
                     </p>
                 </div>
-                <div class="footer_menu-column col-md-3">
+                <div class="footer_menu-column col-12 col-md-3">
                     <p class="footer_menu-column-title">Social media</p>
                     <div class="footer_social">
                         <a href="#" class="footer_social-icon">
@@ -589,6 +789,7 @@
             dots: true,
             appendArrows: $('.slick-slider_navigation')
         });
+
     </script>
 </body>
 

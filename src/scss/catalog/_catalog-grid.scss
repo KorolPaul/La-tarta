@@ -11,18 +11,25 @@
         align-items: center;
         height: 210px;
         overflow: hidden;
-        margin: 0 0 30PX;
+        margin: 0 0 30px; 
+        @include tablet {
+
+        }
 
         &__big {
-            height: 451px;
-            width: 260px;
-            float: left;
-            margin-right: 30px;
+            @include tablet {
+                float: left;
+                margin-right: 30px;
+                height: 451px;
+                width: 260px;
+            }
         }
         &__big-right {
-            float: right;
-            margin-right: 0;
-            margin-left: 30px;
+            @include tablet {
+                float: right;
+                margin-right: 0;
+                margin-left: 30px;
+            }
         }
     }
     &_text {

@@ -1,31 +1,59 @@
 .product-card {
-    width: 30%;
+    position: relative;
+    width: 100%;
     box-shadow: 0 0 0 2px #f0f0f0;
     margin: 0 0 30px;
+    overflow: hidden;
+    @include tablet {
+        width: 48%;
+    }
+    @include desktop {
+        width: 30%;
+    }
 
     &__wide,
     &__main {
-        display: flex;
-        width: 100%;    
+        width: 100%;
+        @include tablet {
+            display: flex;
+        }
     }
 
     .catalog_grid__full & {
-        width: 23%;
+        width: 100%;
+        @include tablet {
+            width: 48%;
+        }
+        @include desktop {
+            width: 23%;
+        }
     }
     .menu & {
         margin: 0 15px;
     }
 
+    &_content {
+        .product-card__wide & {
+            padding: 0 0 20px;
+        }
+    }
     &_image {
         width: 100%;
 
         .product-card__wide & {
-            width: 260px;
-            flex-shrink: 0;
+            @include tablet {
+                width: 260px;
+                flex-shrink: 0;
+            }
         }
         .product-card__main & {
-            width: 48%;
-            flex-shrink: 0;
+            width: 100%;
+            @include tablet {
+                width: 48%;
+            }
+            @include desktop {
+                flex-shrink: 0;
+            }
         }
         .product-card__rtl & {
             order: 2;
@@ -94,5 +122,34 @@
         .number {
             margin: 0 30px;
         }
+    }
+    &_stripe {
+        color: $light_color;
+        font: bold 16px $font-family__heading;
+        position: absolute;
+        top: 13px;
+        right: 4px;
+        transform: rotateZ(45deg);
+        
+        &::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: -3px;
+            left: -35px;
+            z-index: 0;
+        }
+        &__hot::after {
+            background: $bright_color;
+        }
+        &__new::after {
+            background: #598132;
+        }
+    }
+    &_stripe-text {
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
     }
 }

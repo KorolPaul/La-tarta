@@ -1,6 +1,10 @@
 .showcase {
     background: #ccc url(#{$img-path}/showcase-bg.png) repeat-x 0 bottom;
     min-height: 270px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &_title {
         color: $light_color;

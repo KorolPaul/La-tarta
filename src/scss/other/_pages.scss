@@ -3,7 +3,11 @@
     text-align: center;
 
     &_link {
-        font: 26px $font-family__heading;
-        margin: 0 13px;
+        font: 20px $font-family__heading;
+        margin: 0 7px;
+        @include tablet {
+            font-size: 26px;
+            margin: 0 13px;
+        }
     }
 }

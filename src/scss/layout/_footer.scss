@@ -9,6 +9,11 @@
         margin: 0 0 15px;
     }
     &_menu-column {
+        margin: 0 0 30px;
+        @include tablet {
+            margin: 0;
+        }
+
         p {
             margin: 0 0 13px;
         }
@@ -36,9 +41,11 @@
     }
     &_bottom {
         border-top: 1px solid #616161;
-        margin: 50px 0 0;
         padding: 15px 0;
         text-align: center;
+        @include tablet {
+            margin: 50px 0 0;
+        }
     }
     &_copyright {
         color: #888888;

@@ -2,7 +2,11 @@
     background: url(#{$img-path}/marker.png) no-repeat 0 center;
     color: $light_color;
     font-family: $font-family__heading;
+    display: inline-block;
+    margin: 0 30px 5px;
     padding: 0 0 0 13px;
-    margin: 0 65px 0 0;
     text-decoration: none;
+    @include tablet {
+        margin: 0 65px 0 0;
+    }
 }

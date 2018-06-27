@@ -5,9 +5,13 @@
         @extend %heading-2;
         margin-bottom: 20px;
     }
-    &_link {
+    &_link,
+    &_special {
         font: bold 16px $font-family__heading;
         display: block;
         margin: 0 0 25px;
+    }
+    &_special {
+        color: $bright_color;
     }
 }

@@ -1,57 +1,50 @@
 .menu-toggle {
-    @include invisible-text;
     box-sizing: border-box;
-    border-radius: 0;
-    background: #fff;
+    border: none;
+    background: $link_color;
     padding: 0;
-    height: 26px;
-    width: 40px;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    margin: 0 0 0 -20px;
+    margin: 0 15px;
+    height: 3px;
+    width: 35px;
     overflow: visible;
     min-width: inherit;
     z-index: 2;
-
-    .home & {
-        top: 35px;
+    transition: .2s ease background;
+    @include desktop {
+        display: none;
     }
 
-    &:before {
+    &:hover {
+        background: $link_color;
+    }
+    &::before {
         content: '';
-        background: $bg_color;
+        background: $link_color;
         position: absolute;
-        top: 4px;
+        top: -12px;
         left: 0;
         right: 0;
-        height: 7px;
-        transition: .2s ease-in-out height,
-                    .2s ease-in-out transform;
+        height: 3px;
+        transition: .2s ease-in-out height, .2s ease-in-out transform;
     }
-    &:after {
+    &::after {
         content: '';
-        background: $bg_color;
+        background: $link_color;
         position: absolute;
-        bottom: 4px;
+        bottom: -12px;
         left: 0;
         right: 0;
-        height: 7px;
-        transition: .2s ease-in-out height,
-                    .2s ease-in-out transform;
+        height: 3px;
+        transition: .2s ease-in-out height, .2s ease-in-out transform;
     }
 
-    .toggled & {
-        left: 35px;
-        margin: 0 0 0 -20px;
-
-        &:before {
-            transform: rotateZ(45deg) translate(5px, 5px);
-            height: 4px;
-        }
-        &:after {
-            transform: rotateZ(-45deg) translate(5px, -4px);
-            height: 4px;
-        }
+    .menu.opened & {
+        background: transparent;
+    }
+    .menu.opened &::before {
+        transform: rotateZ(45deg) translate(9px, 9px);
+    }
+    .menu.opened &::after {
+        transform: rotateZ(-45deg) translate(8px, -7px)
     }
 }

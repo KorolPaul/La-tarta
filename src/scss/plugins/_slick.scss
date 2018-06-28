@@ -100,14 +100,14 @@
   }
 }
 .slick-prev {
-  background-image: url(#{$img_path}/slider-prev.png);
+  background-image: url(#{$img_path}/slider-prev.svg);
   background-position: 0 center;
-  left: 0;
+  left: 15px;
 }
 .slick-next {
-  background-image: url(#{$img_path}/slider-next.png);
+  background-image: url(#{$img_path}/slider-next.svg);
   background-position: right center;
-  right: 0;
+  right: 15px;
 }
 .slick-disabled {
   opacity: .2;

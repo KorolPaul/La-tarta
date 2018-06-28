@@ -40,19 +40,19 @@
         }
         
         &__grid {
-            background-image: url(#{$img_path}/grid.png);
+            background-image: url(#{$img_path}/grid.svg);
 
             &:hover,
             &.active {
-                background-image: url(#{$img_path}/grid-white.png);
+                background-image: url(#{$img_path}/grid-white.svg);
             }
         }
         &__list {
-            background-image: url(#{$img_path}/list.png);
+            background-image: url(#{$img_path}/list.svg);
 
             &:hover,
             &.active {
-                background-image: url(#{$img_path}/list-white.png);
+                background-image: url(#{$img_path}/list-white.svg);
             }
         }
     }

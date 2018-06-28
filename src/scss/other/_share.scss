@@ -13,7 +13,7 @@
         $social_networks: insta, tw, fb, g, pin;
         @each $s in $social_networks {
             &__#{$s} {
-                background-image: url(#{$img-path}/social/#{$s}-blue.png);
+                background-image: url(#{$img-path}/social/#{$s}-blue.svg);
             }
         }
     }

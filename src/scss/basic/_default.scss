@@ -10,6 +10,7 @@ a {
 
     &:hover {
         color: $link_color__hover;
+        outline: none;
     }
 }
 
@@ -44,7 +45,7 @@ ul {
 }
 
 blockquote {
-    background: url(#{$img-path}/quote.png) no-repeat;
+    background: url(#{$img-path}/quote.svg) no-repeat;
     font-size: 20px;
     line-height: 1.75;
     margin: 0 0 20px;
@@ -53,4 +54,10 @@ blockquote {
 
 img {
     max-width: 100%;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
 }

@@ -5,7 +5,7 @@
     }
 
     &_button {
-        background: url(#{$img-path}/cart.png) no-repeat;
+        background: url(#{$img-path}/cart.svg) no-repeat 0 center;
         border: none;
         display: inline-block;
         color: $link_color;
@@ -13,7 +13,7 @@
         width: 34px;
         padding: 0 12px 0 0;
         position: relative;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 10px;
 
         &::after {
             content: '▼';
@@ -24,6 +24,8 @@
         }
         &:hover {
             background-color: transparent;
+            background-image: url(#{$img-path}/cart-purple.svg);
+            color: $bright_color;
         }
     }
     &_dropdown {

@@ -20,7 +20,7 @@
         font: bold 16px $font-family__heading;
     }
     &_input[type] {
-        background: url(#{$img_path}/edit.png) no-repeat 95% center;
+        background: url(#{$img_path}/edit.svg) no-repeat 95% center;
         border-color: transparent;
         cursor: pointer;
         color: $link_color;

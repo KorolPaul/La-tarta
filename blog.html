@@ -2,11 +2,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Blog</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>La tarta</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <meta property="og:title" content="#{data.title}">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="300">
+    <meta property="twitter:description" content="">
 </head>
 
 <body>
@@ -143,24 +156,27 @@
                                         <a href="./text.html" class="menu_sublist-link">Blog single post</a>
                                     </li>
                                     <li class="menu_sublist-item">
-                                        <a href="./about.html" class="menu_sublist-link">About us</a>
+                                        <a href="./catalog.html" class="menu_sublist-link">Catalog grid</a>
                                     </li>
                                     <li class="menu_sublist-item">
-                                        <a href="#" class="menu_sublist-link">Contacts</a>
+                                        <a href="./product.html" class="menu_sublist-link">Product details</a>
+                                    </li>
+                                    <li class="menu_sublist-item">
+                                        <a href="./about.html" class="menu_sublist-link">About us</a>
                                     </li>
                                     <li class="menu_sublist-item">
                                         <a href="./cart.html" class="menu_sublist-link">Shopping cart</a>
                                     </li>
                                     <li class="menu_sublist-item">
-                                        <a href="#" class="menu_sublist-link">Checkout process</a>
+                                        <a href="./signup.html" class="menu_sublist-link">Sign up</a>
                                     </li>
                                     <li class="menu_sublist-item">
-                                        <a href="./account.html|" class="menu_sublist-link">User account</a>
+                                        <a href="./account.html" class="menu_sublist-link">User account</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu_list-item">
-                                <a href="./catalog.html" class="menu_link">Catalog</a>
+                                <a href="./catalog-intro.html" class="menu_link">Catalog</a>
                             </li>
                             <li class="menu_list-item">
                                 <a href="./blog.html" class="menu_link">Blog</a>
@@ -381,7 +397,7 @@
                         <a href="#" class="pages_link">6</a>
                         <a href="#" class="pages_link">...</a>
                         <a href="#" class="pages_link">26</a>
-                        <a href="#" class="pages_link">«</a>
+                        <a href="#" class="pages_link">»</a>
                     </div>
                 </div>
                 <div class="col col-lg-3">
@@ -405,36 +421,36 @@
                         </div>
                         <div class="recent-posts">
                             <p class="recent-posts_title">Recent posts</p>
-                            <div class="recent-posts_item">
+                            <a href="#" class="recent-posts_item">
                                 <div class="recent-posts_item-top">
                                     <img src="http://via.placeholder.com/55x55" alt="" class="recent-posts_item-image">
-                                    <a href="#" class="recent-posts_item-title">Birthday cake idea</a>
+                                    <span class="recent-posts_item-title">Birthday cake idea</span>
                                 </div>
                                 <div class="recent-posts_item-bottom">
                                     <span class="recent-posts_item-date">28 JUN, 2018</span>
                                     <span class="recent-posts_item-count">3 comments</span>
                                 </div>
-                            </div>
-                            <div class="recent-posts_item">
+                            </a>
+                            <a href="#" class="recent-posts_item">
                                 <div class="recent-posts_item-top">
                                     <img src="http://via.placeholder.com/55x55" alt="" class="recent-posts_item-image">
-                                    <a href="#" class="recent-posts_item-title">How to make a perfect wedding cake?</a>
+                                    <span class="recent-posts_item-title">How to make a perfect wedding cake?</span>
                                 </div>
                                 <div class="recent-posts_item-bottom">
                                     <span class="recent-posts_item-date">24 JUN, 2018</span>
                                     <span class="recent-posts_item-count">13 comments</span>
                                 </div>
-                            </div>
-                            <div class="recent-posts_item">
+                            </a>
+                            <a href="#" class="recent-posts_item">
                                 <div class="recent-posts_item-top">
                                     <img src="http://via.placeholder.com/55x55" alt="" class="recent-posts_item-image">
-                                    <a href="#" class="recent-posts_item-title">Proper using of cinnamon sticks & powder</a>
+                                    <span class="recent-posts_item-title">Proper using of cinnamon sticks & powder</span>
                                 </div>
                                 <div class="recent-posts_item-bottom">
                                     <span class="recent-posts_item-date">23 JUN, 2018</span>
                                     <span class="recent-posts_item-count">2 comments</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="tags">
                             <p class="tags_title">Tags</p>
@@ -542,12 +558,18 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col">
-                        <p class="footer_copyright">© 2016 Designed by Artem Semkin</p>
+                        <p class="footer_copyright">© 2018 Designed by Artem Semkin</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 
 </html>

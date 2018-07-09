@@ -1,0 +1,103 @@
+.comments {
+    border: 2px solid #f0f0f0;
+    border-radius: 3px;
+    margin: 0 0 30px;
+    padding: 0 15px 15px;
+    @include tablet {
+        padding: 0 45px 45px;
+        margin: 0 0 100px;
+    }
+
+    &_title {
+        @extend %heading-1;
+    }
+}
+
+.comment {
+    padding: 30px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    @include tablet {
+        display: flex;
+    }
+
+    &__inner {
+        margin-left: 20px;
+        @include tablet {
+            margin-left: 110px;
+        }
+    }
+
+    &_left {
+        flex-shrink: 0;
+        margin: 0 15px 0 0;
+        @include tablet {
+            text-align: center;
+        }
+    }
+    &_avatar {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 0 10px;
+    }
+    &_user {
+        font: bold $font_size $font-family__heading;
+    }
+    &_date {
+        color: #888888;
+        font: $font_size $font-family__heading;
+        margin: 0 100px 10px 0;
+    }
+    &_reply {
+        font-family: $font-family__heading;
+        text-transform: uppercase;
+        @include tablet {
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+    }
+    &_text {
+        background: #e3e3e6;
+        padding: 30px 30px 10px;
+        margin: 0 0 20px;
+        @include tablet {
+            margin: 0;
+        }
+    }
+}
+
+.comment-form {
+    
+    &_title {
+        @extend %heading-1;
+    }
+    &_fields {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &_field {
+        margin: 0 0 15px;
+        width: 100%;
+        @include tablet {
+            margin: 0 0 35px;
+        }
+    }
+    &_item {
+        width: 100%;
+        @include tablet {
+            width: 48%;
+        }
+
+        &__wide {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}

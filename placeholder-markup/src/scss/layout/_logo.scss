@@ -1,0 +1,12 @@
+.logo {
+    background: url(#{$img-path}/logo.svg) no-repeat center top;
+    background-size: 42px;
+    font: 22px $font-family__cursive;
+    display: inline-block;
+    padding: 45px 0 0;
+    margin: 8px 0;
+    white-space: nowrap;
+    @include tablet {
+        margin: 15px 0;
+    }
+}

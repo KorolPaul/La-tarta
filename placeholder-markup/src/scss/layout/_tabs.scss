@@ -1,0 +1,40 @@
+.tabs {
+    &_buttons {
+        font-size: 0;
+        white-space: nowrap;
+        overflow: auto;
+        @tablet {
+            white-space: inherit;
+        }
+    }
+    &_button {
+        color: $link_color;
+        border: 1px solid $link_color;
+        border-radius: 0;
+        font: bold 16px $font-family__heading;
+        padding: 15px;
+        @include tablet {
+            padding: 30px;
+        }
+
+        &:hover,
+        &.active {
+            background: $link_color;
+            color: $light_color;
+        }
+    }
+    &_content {
+        border: 1px solid $link_color;
+        padding: 15px;
+        @include tablet {
+            padding: 25px;
+        }
+    }
+    &_tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

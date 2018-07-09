@@ -1,0 +1,48 @@
+.recent-posts {
+    padding: 0 0 30px;
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
+    &_item {
+        display: block;
+        padding: 15px 0;
+
+        &:not(:first-of-type) {
+            border-top: 1px solid #f0f0f0;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &_item-top {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px;
+    }
+    &_item-image {
+        border-radius: 5px;
+        height: 55px;
+        width: 55px;
+        margin: 0 15px 0 0;
+    }
+    &_item-title {
+        font: bold 16px $font-family__heading;
+    }
+    &_item-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_item-date {
+        clear: both;
+        color: #888;
+        font: bold 12px $font-family__heading;
+        text-transform: uppercase;
+    }
+    &_item-count {
+        color: #888;
+        font: bold 12px $font-family__heading;
+    }
+}

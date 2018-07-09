@@ -1,5 +1,6 @@
 .slick-slider {
-    max-height: 90vh;
+    max-height: calc(98vh - 160px);
+    overflow: hidden;
 
     &__small {
         margin: 0 0 75px;
@@ -35,16 +36,19 @@
 
         .slick-slider__small & {
             max-width: 750px;
+            position: static;
+            transform: none;
         }
     }
     &_content {
         position: absolute;
         left: 0;
         right: 0;
-        top: 50%;
+        top: 30%;
         padding: 30px;
         transform: translate(0, -50%);
         @include tablet {
+            top: 50%;
             background: $light_color;
             border-radius: 10px;
             box-shadow: 0 2px 5px rbga(0, 0, 0, .3);
@@ -53,10 +57,11 @@
     }
     &_title {
         color: $bright_color;
-        font: 72px/1 $font-family__cursive;
+        font: 15vw/1 $font-family__cursive;
         margin: 0 0 20px;
         @include tablet {
             margin: 0;
+            font-size: 72px;
         }
     }
     &_text {
@@ -96,11 +101,7 @@
         vertical-align: 4px;
     }
     &_quote-content {
-        position: absolute;
-        top: 50%;
-        left: 0;
         width: 100%;
-        transform: translate(0, -50%);
         border-radius: 10px;
         padding: 30px;
         box-shadow: 0 2px 5px rbga(0, 0, 0, .3);

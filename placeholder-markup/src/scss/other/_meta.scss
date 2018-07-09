@@ -1,0 +1,32 @@
+.meta {
+    border-top: 1px solid #e0e0e0; 
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    color: #888;
+    font-family: $font-family__heading;
+    margin: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+
+    &_author,
+    &_date {
+        margin: 0 10px 0 0;
+        padding: 0 20px 0 0;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -1px;
+            top: 5px;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background: $bright_color;
+        }
+    }
+    &_category {
+        font-weight: bold;
+    }
+}

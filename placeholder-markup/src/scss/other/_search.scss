@@ -1,0 +1,9 @@
+input.search {
+    background: $light_color url(#{$img_path}/search.svg) 95% center no-repeat;
+    padding: 7px 30px 7px 15px;
+    width: 100%;
+    margin: 10px 0 0;
+    @include tablet {
+        margin: 0;
+    }
+}

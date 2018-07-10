@@ -113,6 +113,7 @@
     border-radius: 4px;
   }
   .slider-handle {
+    cursor: pointer;
     position: absolute;
     top: -2px;
     width: 18px;
@@ -120,6 +121,11 @@
     background-color: $light_color;
     border: 4px solid $bright_color;
     border-radius: 50%;
+    transition: .2s ease-in-out background;
+
+    &:hover {
+        background: $bright_color;
+    }
   }
   .slider-handle.round {
     border-radius: 50%;

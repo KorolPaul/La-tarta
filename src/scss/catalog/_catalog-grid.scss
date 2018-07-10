@@ -2,7 +2,7 @@
     @extend %clearfix;
 
     &_item {
-        background: #3d4547;
+        background: #000;
         color: $light_color;
         font: 72px $font-family__cursive;
         position: relative;
@@ -12,8 +12,9 @@
         height: 210px;
         overflow: hidden;
         margin: 0 0 30px; 
-        @include tablet {
-
+        &:hover {
+            color: $light_color;
+            text-decoration: none;
         }
 
         &__big {
@@ -39,8 +40,17 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        min-height: 100%;
         min-width: 100%;
         transform: translate(-50%, -50%);
         z-index: 0;
+        opacity: .3;
+        transition: .2s ease-in-out opacity,
+                    .3s ease-in-out transform;
+
+        .catalog-grid_item:hover & {
+            opacity: .6;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
     }
 }

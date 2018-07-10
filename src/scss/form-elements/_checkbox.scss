@@ -11,7 +11,11 @@ input[type="checkbox"] {
         font-weight: bold;
         padding: 0 0 0 20px;
         position: relative;
+        transition: .2s ease-in-out color;
 
+        &:hover {
+            color: $link_color__hover;
+        }
         &::before {
             content: '';
             color: transparent;
@@ -24,6 +28,10 @@ input[type="checkbox"] {
             top: 3px;
             height: 11px;
             width: 11px;
+            transition: .2s ease-in-out border;
+        }
+        &:hover::before {
+            border-color: $link_color__hover;
         }
         &::after {
             content: '✔';

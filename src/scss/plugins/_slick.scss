@@ -123,6 +123,13 @@
   right: 0;
   bottom: 55px;
 
+  .slick-slider__small & {
+      bottom: 10px;
+      @include tablet {
+          bottom: 55px;
+      }
+  }
+
   li[role] {
     @include invisible-text;
     display: inline;

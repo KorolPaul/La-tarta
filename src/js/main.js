@@ -19,13 +19,13 @@ $(window).on('load', function () {
     });
 
     /* Tabs */
-    $(".tabs").on('click', 'button', function(e) {
+    $(".tabs, .catalog_mode").on('click', 'button', function(e) {
         e.preventDefault();
 
-        $(".tabs_button.active, .tabs_tab.active").removeClass('active');
+        $(".tabs_button.active, .tabs_tab.active, .catalog_tab, .catalog_mode-icon").removeClass('active');
 
         $(this).addClass('active');
-        $('.tabs_tab[data-tab="'+ $(this).data('tab') +'"]').addClass('active');
+        $('.tabs_tab[data-tab="'+ $(this).data('tab') +'"], .catalog_tab[data-tab="'+ $(this).data('tab') +'"]').addClass('active');
     });
 
     /*Range inputs*/

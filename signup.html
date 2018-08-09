@@ -496,6 +496,11 @@
                 $('.steps_button, .steps_step').removeClass('active');
                 $('.steps_button:nth-child(' + activeStep + '), .steps_step:nth-child(' + activeStep + ')').addClass(
                     'active');
+
+                $("select:visible").chosen({
+                    disable_search: true,
+                    width: $(this).data('width')
+                });
             }
 
         });

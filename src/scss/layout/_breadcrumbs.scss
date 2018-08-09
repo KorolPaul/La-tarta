@@ -3,9 +3,6 @@
     font-family: $font-family__heading;
     margin: 0 0 30px;
     padding: 25px 0;
-    @include tablet {
-        margin: 0 0 100px;
-    }
 
     &_link {
         font-weight: bold;

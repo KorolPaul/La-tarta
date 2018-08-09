@@ -3,10 +3,11 @@
     overflow: hidden;
 
     &__small {
-        margin: 0 0 75px;
+        margin: 0 0 15px;
     }
     &_item {
         position: relative;
+        outline: none;
     }
     &_image {
         object-fit: cover;
@@ -14,13 +15,14 @@
         height: 100%;
     }
     &_navigation {
-        margin: -120px auto 0;
+        margin: auto;
         height: 120px;
         position: relative;
+        bottom: 120px;
 
         .slick-slider__small & {
             max-width: 750px;
-            margin-top: -80px;
+            bottom: 3px;
         }
     }
     &_holder {
@@ -38,6 +40,7 @@
 
         .slick-slider__small & {
             max-width: 750px;
+            height: auto;
             position: static;
             transform: none;
         }

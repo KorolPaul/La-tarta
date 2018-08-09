@@ -1,7 +1,7 @@
 .product {
     margin: 0 0 60px;
     @include tablet {
-        margin: 0 0 180px;
+        margin: 0 0 100px;
     }
 
     &_gallery {
@@ -21,9 +21,14 @@
     &_gallery-carousel {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        img:not(:first-child) {
-            margin: 0 0 0 13px;
+        img {
+            width: 23%;
+
+            &:not(:first-child) {
+                margin: 0 0 0 13px;
+            }
         }
     }
     &_title {

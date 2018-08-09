@@ -13,7 +13,7 @@ $(window).on('load', function () {
 
 
     /* Dropdown */
-    $("select").chosen({
+    $("select:visible").chosen({
         disable_search: true,
         width: $(this).data('width')
     });

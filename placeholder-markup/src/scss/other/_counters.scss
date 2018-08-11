@@ -1,0 +1,41 @@
+.counters {
+    background: #ccc url(#{$img_path}/dark-bg.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 0 80px;
+    padding: 0 15px;
+
+    &_holder {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_item {
+        color: $light_color;
+        text-align: center;
+        padding: 30px 0;
+        @include tablet {
+            padding: 100px 0 90px;
+            width: 200px;
+        }
+    }
+    &_value {
+        display: block;
+        font: bold 54px $font-family__heading;
+        margin: 0 0 20px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-top: 1px solid $bright_color;
+            bottom: -3px;
+            left: 50%;
+            width: 30px;
+            transform: translate(-50%, 0);
+        }
+    }
+    &_title {
+        font: bold 26px/32px $font-family__heading;
+    }
+}

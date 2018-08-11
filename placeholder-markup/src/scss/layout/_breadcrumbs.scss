@@ -1,0 +1,21 @@
+.breadcrumbs {
+    border-bottom: 1px solid #f0f0f0;
+    font-family: $font-family__heading;
+    margin: 0 0 30px;
+    padding: 25px 0;
+
+    &_link {
+        font-weight: bold;
+        padding: 0 14px 0 0;
+        margin: 0 10px 0 0;
+        position: relative;
+
+        &::after {
+            content: '>';
+            color: $bright_color;
+            position: absolute;
+            right: -2px;
+            top: 0px;
+        }
+    }
+}

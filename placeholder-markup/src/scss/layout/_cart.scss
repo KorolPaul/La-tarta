@@ -1,0 +1,52 @@
+.cart {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+
+    &_button {
+        background: url(#{$img-path}/cart.svg) no-repeat 0 center;
+        border: none;
+        display: inline-block;
+        color: $link_color;
+        height: 18px;
+        width: 34px;
+        padding: 0 12px 0 0;
+        position: relative;
+        margin: 0 0 0 10px;
+
+        &::after {
+            content: '▼';
+            font-size: 8px;
+            position: absolute;
+            top: 4px;
+            right: 0;
+        }
+        &:hover {
+            background-color: transparent;
+            background-image: url(#{$img-path}/cart-purple.svg);
+            color: $bright_color;
+        }
+    }
+    &_dropdown {
+        background: $light_color;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        opacity: 0;
+        transform: translate(0, -20px);
+        z-index: -1;
+        transition: .2s ease-in-out opacity,
+                    .2s ease-in-out transform,
+                    0s ease-in-out .2s z-index;
+
+        .cart:hover & {
+            opacity: 1;
+            transform: translate(0, 0);
+            z-index: 1;
+            transition: .2s ease-in-out opacity,
+                        .2s ease-in-out transform,
+                        0s ease-in-out z-index;
+        }
+    }
+}

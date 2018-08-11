@@ -1,0 +1,7 @@
+.phone-number {
+    background: url(#{$img-path}/phone.svg) no-repeat 0 2px ;
+    color: $light_color;
+    font-family: $font-family__heading;
+    padding: 0 0 0 15px;
+    white-space: nowrap;
+}
